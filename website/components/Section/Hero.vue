@@ -8,17 +8,29 @@ defineExpose({
   animate
 })
 
-function animate(){
+onMounted(()=>{
+  animate();
+})
+
+const open = ref(false)
+function slideOpen(){
 
 }
+
+function animate(){
+  open.value = true;
+}
+
 </script>
 
 <template>
   <div class="relative w-full h-full">
 
-    <div class="first-layer absolute flex w-full h-full bg-black">
+    <div class="first-layer absolute flex w-full h-full ">
 
-      <div class="left-side relative flex w-1/2 h-full overflow-hidden">
+      <div
+          :class="{ 'open-left-element': open }"
+          class="left-side relative flex w-1/2 h-full overflow-hidden ">
 
         <div class="absolute flex flex-row-reverse    right-0  w-[50vw] h-full">
           <div class="main-left-image w-full md:w-1/2 h-full  bg-teal-300 ">
@@ -36,7 +48,9 @@ function animate(){
 
       </div>
 
-      <div class="right-side relative flex w-1/2 h-full overflow-hidden">
+      <div
+          :class="{ 'open-right-element': open }"
+          class="right-side relative flex w-1/2 h-full overflow-hidden ">
 
         <div class=" absolute flex    left-0  w-[50vw] h-full">
           <div class=" main-right-image w-full md:w-1/2 h-full  bg-teal-300 ">
@@ -57,12 +71,12 @@ function animate(){
     </div>
 
 
-    <div class="second-layer absolute w-full h-full hero-overlay"
+    <div class="hidden  second-layer absolute w-full h-full hero-overlay"
          style=""
     ></div>
 
 
-    <div class="third-layer absolute w-full h-full">
+    <div class="third-layer  absolute w-full h-full">
       <div class="flex w-full h-full justify-center items-center">
         <div class="bg-blac max-w-screen-md text-center ">
           <h1 class="page-title text-white font-semibold   text-6xl cd">Rigas vesturiskas muzikas un dejas festivals 2025</h1>
@@ -99,6 +113,54 @@ function animate(){
   10px 10px 20px #e3d7c9,
   -10px -10px 20px #dcd0c6
 ;
+}
+
+.open-left-element{
+  animation: open-left 2s ease-in;
+  opacity: 0;
+  display: none;
+
+}
+@keyframes open-left {
+  0%{
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  99%{
+    display: flex;
+    opacity: 0;
+    transform: translateX(-100vw);
+  }
+  100%{
+    display: none;
+    transform: translateX(-100vw);
+  }
+
+}
+
+.open-right-element{
+  animation: open-right 2s ease-in;
+  opacity: 0;
+  display: none;
+
+}
+@keyframes open-right {
+  0%{
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  99%{
+    display: flex;
+    opacity: 0;
+    transform: translateX(100vw);
+  }
+  100%{
+    display: none;
+    transform: translateX(100vw);
+  }
+
 }
 
 </style>
