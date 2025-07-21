@@ -9,7 +9,7 @@ defineExpose({
 })
 
 onMounted(()=>{
-  animate();
+
 })
 
 const open = ref(false)
@@ -19,6 +19,7 @@ function slideOpen(){
 
 function animate(){
   open.value = true;
+  console.log("animating")
 }
 
 </script>

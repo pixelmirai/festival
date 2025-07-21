@@ -9,11 +9,13 @@ import { useScrollHandler } from "@/composables/useScrollHandler"
 
 
 const slider = ref(null)
-
+const hero = ref(null);
 const posts = ref([])
 
 onMounted(async () => {
-
+  if (hero.value){
+    hero.value.animate();
+  }
 })
 </script>
 
@@ -29,7 +31,7 @@ onMounted(async () => {
 
 
     <section class="relative  w-screen h-screen ">
-     <SectionHero/>
+     <SectionHero ref="hero"/>
 
 
     </section>
