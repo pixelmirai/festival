@@ -12,10 +12,15 @@ const slider = ref(null)
 const hero = ref(null);
 const posts = ref([])
 
-onMounted(async () => {
+function handleVideoLoaded(){
+  console.log("video loaded")
   if (hero.value){
     hero.value.animate();
   }
+}
+
+onMounted(async () => {
+
 })
 </script>
 
@@ -23,7 +28,7 @@ onMounted(async () => {
   <div class="">
 
     <div class="background-video fixed z-[-20] top-0 w-screen h-screen overflow-hidden  bg-black">
-      <video autoplay muted loop playsinline class="w-full h-full object-cover " src="assets/videos/herovideo.mp4"></video>
+      <video autoplay muted loop playsinline preload="none" @loadeddata="handleVideoLoaded" class="w-full h-full object-cover " src="assets/videos/herovideo.mp4"></video>
     </div>
 
 
