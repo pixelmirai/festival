@@ -3,16 +3,16 @@
 </script>
 
 <template>
-<div>
-  <header class="sticky top-0 z-30">
-      <HeaderNavBar/>
+<div class="w-screen">
+  <header class="ticky op-0 z30 w-screen">
+<!--      <HeaderNavBar/>-->
   </header>
    
-  <main class="min-h-[90vh]">
+  <main class="min-h-[90vh w-screen "  >
     <slot></slot>
   </main>
   <footer>
-    <FooterContent/>
+<!--    <FooterContent/>-->
   </footer>
 </div>
 
