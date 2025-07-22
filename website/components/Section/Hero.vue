@@ -33,7 +33,7 @@ function animate(){
 </script>
 
 <template>
-  <div class="relative w-full h-full ">
+  <div class="relative w-full h-full min-h-[500px] lg:min-h-[800px] ">
 
     <div class="first-layer absolute flex w-full h-full ">
 
@@ -95,23 +95,40 @@ function animate(){
       </div>
 
       <div class="absolute w-full h-full "
-      style="background-color: rgba(9,9,9,0)"
+      style="background-color: rgba(9,9,9,0.5)"
       ></div>
 
 
 
     </div>
     <div class="third-layer absolute w-full h-full ">
-        <div class="heading-element flex justify-center items-start w-full h-full  ">
+        <div class="heading-element flex justify-center items-start w-full  h-[80%] ">
           <div class="ax-w-screen-2xl mx-4 pt-20  ">
-            <h1 class="page-titl leading-none text-white font-bold -translate-y-20 transition-all duration-1000 ease-linear  uppercase  text-left    text-[8vw] cd">
+            <h1 class="page-titl leading-none text-[3rem] sm:text-[5rem] md:text-[10vw] lg:text-[8vw]  text-white font-bold -translate-y-20   uppercase  text-left    cd">
               Rīgas Vēsturiskās mūzikas un dejas festivāls <br> 2025</h1>
-            <p class="page-titl text-end mr-8 uppercase text-white font-semibold text-[3vw] cd">6 - 11 Septembris</p>
+            <p class="page-titl text-end mr-8 uppercase text-white font-semibold text-[1.5rem] md:text-[4vw] lg:text-[3vw] cd">6 - 11 Septembris</p>
           </div>
         </div>
+      <div class="button-space h-[20%] ">
+
+      </div>
     </div>
-    <div class="button-layer absolute flex justify-center items-end w-full h-full py-8 px-4 ">
-        <div class="bg-white p-8"><button>programma</button></div>
+    <div class="button-layer absolute flex justify-center items-end w-full h-full  ">
+      <div class="flex justify-center items-center h-[20%] py-2 px-2 ">
+        <div
+            style="box-shadow: #8c725d 5px 5px 1px"
+            class="w-32 h-20 max-h-full   border  border-white rounded-tl-md  text-white bg-black flex flex-col  justify-center items-center " >
+          <div>
+            <span class="font-bold uppercase hover:underline cursor-pointer">programma</span>
+          </div>
+          <div class="animate-bounce mt-2 cursor-pointer ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </div>
