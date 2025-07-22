@@ -106,7 +106,7 @@ function animate(){
           <div class="ax-w-screen-2xl mx-4 pt-20  ">
             <h1 class="page-titl leading-none text-[3rem] sm:text-[5rem] md:text-[10vw] lg:text-[8vw]  text-white font-bold -translate-y-20   uppercase  text-left    cd">
               Rīgas Vēsturiskās mūzikas un dejas festivāls <br> 2025</h1>
-            <p class="page-titl text-end mr-8 uppercase text-white font-semibold text-[1.5rem] md:text-[4vw] lg:text-[3vw] cd">6 - 11 Septembris</p>
+            <p class="page-titl text-end mr-8 uppercase text-white font-semibold text-[2rem] md:text-[4vw] lg:text-[3vw] cd">6 - 11 Septembris</p>
           </div>
         </div>
       <div class="button-space h-[20%] ">
