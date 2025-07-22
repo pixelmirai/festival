@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<div class="w-screen">
+<div class="w-screen min-w-[360px] ">
   <header class="ticky op-0 z30 w-screen">
 <!--      <HeaderNavBar/>-->
   </header>

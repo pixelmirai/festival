@@ -20,7 +20,7 @@ function handleVideoLoaded(){
 }
 
 onMounted(async () => {
-  //hero.value.animate();
+ // hero.value.animate();
 })
 </script>
 

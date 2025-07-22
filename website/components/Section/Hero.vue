@@ -9,23 +9,31 @@ defineExpose({
 })
 
 onMounted(()=>{
-
+  //animate()
 })
 
 const open = ref(false)
+const firstBackground = ref(false)
 function slideOpen(){
 
 }
 
 function animate(){
-  open.value = true;
-  console.log("animating")
+  setTimeout(()=>{
+    firstBackground.value = true
+  },1000)
+  setTimeout(()=>{
+   open.value = true;
+  },2000)
+
+
+
 }
 
 </script>
 
 <template>
-  <div class="relative w-full h-full">
+  <div class="relative w-full h-full ">
 
     <div class="first-layer absolute flex w-full h-full ">
 
@@ -77,19 +85,50 @@ function animate(){
     ></div>
 
 
-    <div class="third-layer  absolute w-full h-full">
-      <div class="flex w-full h-full justify-center items-center">
-        <div class="bg-blac max-w-screen-md text-center ">
-          <h1 class="page-title text-white font-semibold   text-6xl cd">Rigas vesturiskas muzikas un dejas festivals 2025</h1>
-          <p class="page-title text-white font-extrabold text-5xl cd">6 - 11 Septembris</p>
-        </div>
+
+    <div
+        :class="firstBackground ? '-translate-y-[110vh]' : ''"
+        class="absolute w-full h-full transition-all duration-1000 ease-in-out ">
+
+      <div class="absolute flex justify-center items-center w-full h-full">
+        <img src="assets/images/clothes.webp" alt="" class="w-full h-full object-cover">
       </div>
 
+      <div class="absolute w-full h-full "
+      style="background-color: rgba(9,9,9,0)"
+      ></div>
+
+
+
     </div>
+    <div class="third-layer absolute w-full h-full ">
+        <div class="heading-element flex justify-center items-start w-full h-full  ">
+          <div class="ax-w-screen-2xl mx-4 pt-20  ">
+            <h1 class="page-titl leading-none text-white font-bold -translate-y-20 transition-all duration-1000 ease-linear  uppercase  text-left    text-[8vw] cd">
+              Rīgas Vēsturiskās mūzikas un dejas festivāls <br> 2025</h1>
+            <p class="page-titl text-end mr-8 uppercase text-white font-semibold text-[3vw] cd">6 - 11 Septembris</p>
+          </div>
+        </div>
+    </div>
+    <div class="button-layer absolute flex justify-center items-end w-full h-full py-8 px-4 ">
+        <div class="bg-white p-8"><button>programma</button></div>
+    </div>
+
   </div>
 </template>
 
 <style scoped>
+
+
+.heading-element {
+
+
+}
+@keyframes circular-reveal {
+
+}
+
+
 .hero-overlay{
   background: #000000;
 
