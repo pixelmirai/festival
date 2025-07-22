@@ -4,27 +4,52 @@ import {useUtils} from "~/composables/useUtils.js";
 
 const utils = useUtils()
 
+
+const heroSlider = ref(null);
+const sliderInterval = ref(null)
+const sliderIntervalCounter = ref(0)
 defineExpose({
   animate
 })
 
 onMounted(()=>{
-  //animate()
+  animate()
+
+  if(heroSlider.value){
+    sliderInterval.value = window.setInterval(() => {
+      if (heroSlider.value) {
+        heroSlider.value.moveLeft(0.001)
+        sliderIntervalCounter.value++
+      }
+
+      if (sliderIntervalCounter.value >= 500) {
+        clearInterval(sliderInterval.value)
+        sliderInterval.value = undefined
+      }
+    }, 20)
+  }
+
 })
 
 const open = ref(false)
+const fadeBlack = ref(false)
 const firstBackground = ref(false)
+const sliderFadeOut = ref(false)
 function slideOpen(){
 
 }
 
 function animate(){
   setTimeout(()=>{
-    firstBackground.value = true
-  },1000)
+    fadeBlack.value = true
+  },200)
   setTimeout(()=>{
-   open.value = true;
+    firstBackground.value = true
   },2000)
+  setTimeout(()=>{
+   sliderFadeOut.value = true;
+  },3000)
+
 
 
 
@@ -35,47 +60,41 @@ function animate(){
 <template>
   <div class="relative w-full h-full min-h-[500px] lg:min-h-[800px] ">
 
-    <div class="first-layer absolute flex w-full h-full ">
+    <div
+        :class="sliderFadeOut ? 'opacity-0':'opacity-90'"
+        class="first-layer absolute flex w-full h-full overflow-hidden transition-opacity  ease-linear"
+      style="transition-duration: 3s"
+    >
 
-      <div
-          :class="{ 'open-left-element': open }"
-          class="left-side relative flex w-1/2 h-full overflow-hidden ">
+      <HeroSlider ref="heroSlider" class=" ">
 
-        <div class="absolute flex flex-row-reverse    right-0  w-[50vw] h-full">
-          <div class="main-left-image w-full md:w-1/2 h-full  bg-teal-300 ">
-            <img src="assets/images/maza-gilde-2.jpg"  alt=""
-                 class="w-full h-full object-cover"
-            >
-          </div>
-          <div class="hidden md:block  md:w-1/2 h-full  bg-teal-300 ">
-            <img src="assets/images/maza-gilde-orchestra.webp"  alt=""
-                 class="w-full h-full object-cover object-[75%_center]"
-            >
-          </div>
-
+        <div class="h-[120vh] w-[32rem]">
+          <img src="assets/images/maza-gilde-2.jpg" alt="" class="w-full h-full object-cover" >
         </div>
-
-      </div>
-
-      <div
-          :class="{ 'open-right-element': open }"
-          class="right-side relative flex w-1/2 h-full overflow-hidden ">
-
-        <div class=" absolute flex    left-0  w-[50vw] h-full">
-          <div class=" main-right-image w-full md:w-1/2 h-full  bg-teal-300 ">
-            <img src="assets/images/collegium-window.jpg"  alt=""
-                 class="w-full h-full object-cover"
-            >
-          </div>
-          <div class="hidden md:block  md:w-1/2 h-full  bg-teal-300 ">
-            <img src="assets/images/maris-kupcs-baroque-1.webp"  alt=""
-                 class="w-full h-full object-cover "
-            >
-          </div>
+        <div class="h-screen w-[32rem]">
+          <img src="assets/images/maza-gilde-orchestra.webp" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="h-screen w-[32rem]">
+          <img src="assets/images/collegium-window-and-door-person.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="h-screen w-[32rem]">
+          <img src="assets/images/maza-gilde-2.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="h-screen w-[32rem]">
+          <img src="assets/images/maza-gilde-2.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="h-screen w-[32rem]">
+          <img src="assets/images/maza-gilde-2.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="h-screen w-[32rem]">
+          <img src="assets/images/maza-gilde-2.jpg" alt="" class="w-full h-full object-cover">
+        </div>
+        <div class="h-screen w-[32rem]">
+          <img src="assets/images/maza-gilde-2.jpg" alt="" class="w-full h-full object-cover">
         </div>
 
 
-      </div>
+      </HeroSlider>
 
     </div>
 
@@ -87,19 +106,18 @@ function animate(){
 
 
     <div
-        :class="firstBackground ? '-translate-y-[110vh]' : ''"
-        class="absolute w-full h-full transition-all duration-1000 ease-in-out ">
+        :class="firstBackground ? '-translate-y-[110vh] ' : ' '"
+        class="absolute w-full h-full transition-all duration-1000 ease-in-out  ">
 
       <div class="absolute flex justify-center items-center w-full h-full">
         <img src="assets/images/clothes.webp" alt="" class="w-full h-full object-cover">
       </div>
 
-      <div class="absolute w-full h-full "
-      style="background-color: rgba(9,9,9,0.5)"
+      <div
+          :class="fadeBlack ? 'fade-black' : ' bg-black'"
+          class="absolute w-full h-full "
+
       ></div>
-
-
-
     </div>
     <div class="third-layer absolute w-full h-full ">
         <div class="heading-element flex justify-center items-start w-full  h-[80%] ">
@@ -113,6 +131,10 @@ function animate(){
 
       </div>
     </div>
+
+
+
+
     <div class="button-layer absolute flex justify-center items-end w-full h-full  ">
       <div class="flex justify-center items-center h-[20%] py-2 px-2 ">
         <div
@@ -173,7 +195,7 @@ function animate(){
 }
 
 .open-left-element{
-  animation: open-left 2s ease-in;
+  animation: open-left 1s ease-in;
   opacity: 0;
   display: none;
 
@@ -216,6 +238,30 @@ function animate(){
   100%{
     display: none;
     transform: translateX(100vw);
+  }
+
+}
+
+.fade-black{
+
+  background-color: rgba(9,9,9,1);
+  animation: fade-black-animation 2s linear;
+}
+
+@keyframes fade-black-animation {
+  0%{
+    background-color: rgba(9,9,9,1);
+
+  }
+  70%{
+    background-color: rgba(9,9,9,0);
+
+  }
+  80%{
+    background-color: rgba(9,9,9,1);
+  }
+  100%{
+    background-color: rgba(9,9,9,1);
   }
 
 }
