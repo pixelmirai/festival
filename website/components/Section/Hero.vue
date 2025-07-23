@@ -9,11 +9,10 @@ const heroSlider = ref(null);
 const sliderInterval = ref(null)
 const sliderIntervalCounter = ref(0)
 defineExpose({
-  animate
+
 })
 
 onMounted(()=>{
-  animate()
 
   if(heroSlider.value){
     sliderInterval.value = window.setInterval(() => {
@@ -39,86 +38,39 @@ function slideOpen(){
 
 }
 
-function animate(){
-  setTimeout(()=>{
-    fadeBlack.value = true
-  },200)
-  setTimeout(()=>{
-    firstBackground.value = true
-  },2000)
-  setTimeout(()=>{
-   sliderFadeOut.value = true;
-  },3000)
-
-
-
-
-}
 
 </script>
 
 <template>
-  <div class="relative w-full h-full min-h-[500px] lg:min-h-[800px] ">
+  <div class="relative w-full h-full min-h-[500px] lg:min-h-[800px] overflow-hidden">
 
-    <div
-        :class="sliderFadeOut ? 'opacity-0':'opacity-90'"
-        class="first-layer absolute flex w-full h-full overflow-hidden transition-opacity  ease-linear"
-      style="transition-duration: 3s"
-    >
+    <div class="first-layer absolute flex w-full h-full overflow-hidden slider-fade-out">
 
-      <HeroSlider ref="heroSlider" class=" ">
+      <div class="absolute w-full h-full overflow-x-hidden">
 
-        <div class="h-[120vh] w-[32rem]">
-          <img src="assets/images/maza-gilde-2.jpg" alt="" class="w-full h-full object-cover" >
-        </div>
-        <div class="h-screen w-[32rem]">
-          <img src="assets/images/maza-gilde-orchestra.webp" alt="" class="w-full h-full object-cover">
-        </div>
-        <div class="h-screen w-[32rem]">
-          <img src="assets/images/collegium-window-and-door-person.jpg" alt="" class="w-full h-full object-cover">
-        </div>
-        <div class="h-screen w-[32rem]">
-          <img src="assets/images/maza-gilde-2.jpg" alt="" class="w-full h-full object-cover">
-        </div>
-        <div class="h-screen w-[32rem]">
-          <img src="assets/images/maza-gilde-2.jpg" alt="" class="w-full h-full object-cover">
-        </div>
-        <div class="h-screen w-[32rem]">
-          <img src="assets/images/maza-gilde-2.jpg" alt="" class="w-full h-full object-cover">
-        </div>
-        <div class="h-screen w-[32rem]">
-          <img src="assets/images/maza-gilde-2.jpg" alt="" class="w-full h-full object-cover">
-        </div>
-        <div class="h-screen w-[32rem]">
-          <img src="assets/images/maza-gilde-2.jpg" alt="" class="w-full h-full object-cover">
+        <div class="absolute h-full flex flex-nowrap min-w-max slider-movement ">
+          <div v-for="i in 10" class="h-[100vh] w-[32rem]">
+            <img src="assets/images/maza-gilde-2.jpg" alt="" class="w-full h-full object-cover">
+          </div>
         </div>
 
-
-      </HeroSlider>
+      </div>
 
     </div>
 
 
-    <div class="hidden  second-layer absolute w-full h-full hero-overlay"
-         style=""
-    ></div>
-
-
 
     <div
-        :class="firstBackground ? '-translate-y-[110vh] ' : ' '"
-        class="absolute w-full h-full transition-all duration-1000 ease-in-out  ">
+          class="first-background first-background-slide-up  absolute block  w-full h-full transition-all duration-1000 ease-in-out  ">
 
       <div class="absolute flex justify-center items-center w-full h-full">
         <img src="assets/images/clothes.webp" alt="" class="w-full h-full object-cover">
       </div>
 
-      <div
-          :class="fadeBlack ? 'fade-black' : ' bg-black'"
-          class="absolute w-full h-full "
-
-      ></div>
+      <div class="fade-black absolute w-full h-full "></div>
     </div>
+
+
     <div class="third-layer absolute w-full h-full ">
         <div class="heading-element flex justify-center items-start w-full  h-[80%] ">
           <div class="ax-w-screen-2xl mx-4 pt-20  ">
@@ -135,12 +87,7 @@ function animate(){
 
 
 
-    <div class="button-layer absolute flex justify-center items-end w-full h-full  ">
-      <div class="flex justify-center items-center h-[20%] py-2 px-2 ">
 
-      </div>
-
-    </div>
 
   </div>
 </template>
@@ -148,94 +95,77 @@ function animate(){
 <style scoped>
 
 
-.heading-element {
 
-
-}
-@keyframes circular-reveal {
-
-}
-
-
-.hero-overlay{
-  background: #000000;
-
-  background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 58%, rgba(28, 28, 27, 1) 91%);}
-
-
-.page-title{
-  color: #FFFFFF;
-
-
-  text-shadow: 1px 1px 1px #3d3c3c,
-  -1px -1px 1px #525151,
-
-  -3px -3px 1px #162512,
-  3px 3px 2px #1f3118,
-  4px 4px 3px #360000,
-  -4px -4px 3px #3f0205,
-  6px 6px 7px #f8992d,
-  -6px -6px 7px #f8992d,
-  8px 8px 9px #f8992d,
-  -8px -8px 9px #f8992d,
-  10px 10px 20px #e3d7c9,
-  -10px -10px 20px #dcd0c6
-;
-}
-
-.open-left-element{
-  animation: open-left 1s ease-in;
-  opacity: 0;
-  display: none;
-
-}
-@keyframes open-left {
-  0%{
-    display: flex;
-    opacity: 1;
-    transform: translateX(0);
-  }
-  99%{
-    display: flex;
-    opacity: 0;
-    transform: translateX(-100vw);
-  }
-  100%{
-    display: none;
-    transform: translateX(-100vw);
-  }
-
-}
-
-.open-right-element{
-  animation: open-right 2s ease-in;
-  opacity: 0;
-  display: none;
-
-}
-@keyframes open-right {
-  0%{
-    display: flex;
-    opacity: 1;
-    transform: translateX(0);
-  }
-  99%{
-    display: flex;
-    opacity: 0;
-    transform: translateX(100vw);
-  }
-  100%{
-    display: none;
-    transform: translateX(100vw);
-  }
-
-}
 
 .fade-black{
-
   background-color: rgba(9,9,9,1);
-  animation: fade-black-animation 2s linear;
+  animation: fade-black-animation 1s linear 0s forwards;
 }
+.first-background-slide-up {
+  opacity: 1;
+  visibility: visible;
+  animation: fbsu 500ms linear 1s forwards; /* 3s delay before it begins */
+}
+
+.slider-movement{
+  animation: sm 20s  forwards;
+}
+@keyframes sm {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+
+}
+
+
+.slider-fade-out {
+  opacity: 0.8;
+  visibility: visible;
+  animation: sfo 6s linear forwards;
+}
+
+
+
+@keyframes sfo {
+  0% {
+    opacity: 0.8;
+    visibility: visible;
+  }
+  99% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+@keyframes fbsu {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  99% {
+    transform: translateY(-120vh);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(-120vh);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+
+
 
 @keyframes fade-black-animation {
   0%{
@@ -245,9 +175,6 @@ function animate(){
   70%{
     background-color: rgba(9,9,9,0);
 
-  }
-  80%{
-    background-color: rgba(9,9,9,1);
   }
   100%{
     background-color: rgba(9,9,9,1);
