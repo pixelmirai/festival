@@ -49,8 +49,8 @@ onMounted(async () => {
 
 
 
-    <div class=" w-full h-96 ">
-      aaaaaaa
+    <div class=" w-full  ">
+      <SectionFirst/>
     </div>
     <div class="  w-screen h-96 ">
       aaaaaaa

@@ -45,48 +45,34 @@ function slideOpen(){
   <div class="relative w-full h-full min-h-[500px] lg:min-h-[800px] overflow-hidden">
 
     <div class="first-layer absolute flex w-full h-full overflow-hidden slider-fade-out">
-
       <div class="absolute w-full h-full overflow-x-hidden">
-
         <div class="absolute h-full flex flex-nowrap min-w-max slider-movement ">
           <div v-for="i in 10" class="h-[100vh] w-[32rem]">
             <img src="assets/images/maza-gilde-2.jpg" alt="" class="w-full h-full object-cover">
           </div>
         </div>
-
       </div>
-
     </div>
 
 
 
-    <div
-          class="first-background first-background-slide-up  absolute block  w-full h-full transition-all duration-1000 ease-in-out  ">
-
+    <div class="first-background first-background-slide-up  absolute block  w-full h-full transition-all duration-1000 ease-in-out  ">
       <div class="absolute flex justify-center items-center w-full h-full">
         <img src="assets/images/clothes.webp" alt="" class="w-full h-full object-cover">
       </div>
-
       <div class="fade-black absolute w-full h-full "></div>
     </div>
 
 
     <div class="third-layer absolute w-full h-full ">
         <div class="heading-element flex justify-center items-start w-full  h-[80%] ">
-          <div class="ax-w-screen-2xl mx-4 pt-20  ">
-            <h1 class="page-titl leading-none text-[3rem] sm:text-[5rem] md:text-[10vw] lg:text-[8vw]  text-white font-bold -translate-y-20   uppercase  text-left    cd">
+          <div class=" mx-4 pt-20   ">
+            <h1 class="  page-titl leading-none text-[3rem] sm:text-[5rem] md:text-[10vw] lg:text-[8vw]  text-white font-bold -ranslate-y-16   uppercase  text-left    cd">
               Rīgas Vēsturiskās mūzikas un dejas festivāls <br> 2025</h1>
-            <p class="page-titl text-end mr-8 uppercase text-white font-semibold text-[2rem] md:text-[4vw] lg:text-[3vw] cd">6 - 11 Septembris</p>
+            <p class=" text-end mr-8 uppercase text-white font-semibold text-[2rem] md:text-[4vw] lg:text-[3vw] cd">6 - 11 Septembris</p>
           </div>
         </div>
-      <div class="button-space h-[20%] ">
-
-      </div>
     </div>
-
-
-
-
 
 
   </div>
@@ -97,7 +83,7 @@ function slideOpen(){
 
 
 
-.fade-black{
+fade-black{
   background-color: rgba(9,9,9,1);
   animation: fade-black-animation 1s linear 0s forwards;
 }
