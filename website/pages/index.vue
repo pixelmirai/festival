@@ -6,6 +6,7 @@ import axios from "axios"
 import { useWindowSize } from "@/composables/useWindowSize"
 import { useInView } from "@/composables/useInView"
 import { useScrollHandler } from "@/composables/useScrollHandler"
+import ButtonProgramm from "~/components/ButtonProgramm.vue";
 
 
 const slider = ref(null)
@@ -37,7 +38,9 @@ onMounted(async () => {
 
     <section class="relative  w-screen h-screen ">
      <SectionHero ref="hero"/>
-
+      <div class="fixed w-full flex justify-center items-center bottom-4  ">
+        <ButtonProgramm class="" />
+      </div>
 
     </section>
 
