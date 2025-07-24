@@ -14,10 +14,7 @@ const hero = ref(null);
 const posts = ref([])
 
 function handleVideoLoaded(){
-  console.log("video loaded")
-  if (hero.value){
-    hero.value.animate();
-  }
+
 }
 
 onMounted(async () => {
@@ -31,7 +28,7 @@ onMounted(async () => {
 
 
     <div class=" background-video fixed z-[-20] top-0 w-screen h-screen overflow-hidden  bg-black">
-      <video autoplay muted loop playsinline preload="none"  class="w-full h-full object-cover " src="assets/videos/herovideo-2.webm"></video>
+      <video autoplay muted loop playsinline preload="none"  class="w-full h-full object-cover " src="assets/videos/remf-3.webm"></video>
     </div>
 
 

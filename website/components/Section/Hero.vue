@@ -69,20 +69,18 @@ function slideOpen(){
     <div class="third-layer absolute w-full h-full ">
       <div class="w-full h-full flex flex-col ">
 
-        <div class="header-space  w-full h-[4rem] border border-white"></div>
+        <div class="header-space  w-full h-[4rem]"></div>
 
-        <div class="heading-element max-w-screen-2xl mx-auto px-4  flex flex-col  flex-grow justify-between  w-full bg-gray-700  ">
+        <div class="heading-element max-w-screen-4xl mx-auto px-4  flex flex-col  flex-grow justify-between  w-full   ">
 
-          <h1 class="hidde  heading   border page-titl leading-none  text-white font-bold   -tanslate-y-16   uppercase  text-left    cd">
+          <h1 class="hidde  heading page-titl leading-none  text-white font-bold   -tanslate-y-16   uppercase  text-left    cd">
             Rīgas Vēsturiskās mūzikas un dejas festivāls <br> 2025
           </h1>
-          <p class="hidde date border text-end  uppercase text-white font-semibold
-
-">6 - 11 Septembris</p>
+          <p class="hidde date text-end  uppercase text-white font-semibold">6 - 11 Septembris</p>
 
         </div>
 
-        <div class="button-space flex justify-center items-center w-full h-[8rem] border border-white">
+        <div class="button-space flex justify-center items-center w-full h-[8rem] ">
           <ButtonProgramm class="" />
         </div>
       </div>
@@ -173,7 +171,7 @@ function slideOpen(){
   background-color: rgba(9,9,9,1);
   animation: fade-black-animation 1.5s linear 0s forwards;
 }
-first-background-slide-up {
+.first-background-slide-up {
   opacity: 1;
   visibility: visible;
   animation: fbsu 500ms linear 1.5s forwards; /* 3s delay before it begins */
@@ -203,6 +201,10 @@ first-background-slide-up {
 
 @keyframes sfo {
   0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  25%{
     opacity: 1;
     visibility: visible;
   }
