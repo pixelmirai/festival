@@ -3,8 +3,10 @@
 </script>
 
 <template>
-<div class="h-[64rem] bg-black">
-
+<div class="h-[64rem]  "
+style="background-color: #c7c3c3"
+>
+aaaaaaaa
 </div>
 </template>
 

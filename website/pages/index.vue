@@ -35,27 +35,17 @@ function scrollToSectionWithOffset(element, offset = 0) {
   }
 }
 
-function handleVideoLoaded(){
-
-}
-
 onMounted(async () => {
- // hero.value.animate();
+
 })
 </script>
 
 <template>
-
   <div class="">
-
 
     <div class=" background-video fixed z-[-20] top-0 w-screen h-screen overflow-hidden  bg-black">
       <video autoplay muted loop playsinline preload="none"  class="w-full h-full object-cover " src="assets/videos/remf-3.webm"></video>
     </div>
-
-
-
-
 
     <section class="relative  w-screen  h-screen  ">
       <div class="absolute w-full h-full">
