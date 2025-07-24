@@ -1,5 +1,6 @@
 <script setup lang="js">
 import {useUtils} from "~/composables/useUtils.js";
+import ButtonProgramm from "~/components/ButtonProgramm.vue";
 
 
 const utils = useUtils()
@@ -42,7 +43,8 @@ function slideOpen(){
 </script>
 
 <template>
-  <div class="relative w-full h-full min-h-[500px] lg:min-h-[800px] overflow-hidden">
+  <div class="relative w-full h-full overflow-hidden min-h-[475px] xl:min-h-[600px]  ">
+
 
     <div class="first-layer absolute flex w-full h-full overflow-hidden slider-fade-out">
       <div class="absolute w-full h-full overflow-x-hidden">
@@ -65,13 +67,27 @@ function slideOpen(){
 
 
     <div class="third-layer absolute w-full h-full ">
-        <div class="heading-element flex justify-center items-start w-full  h-[80%] ">
-          <div class=" mx-4 pt-20   ">
-            <h1 class="  page-titl leading-none text-[3rem] sm:text-[5rem] md:text-[10vw] lg:text-[8vw]  text-white font-bold -ranslate-y-16   uppercase  text-left    cd">
-              Rīgas Vēsturiskās mūzikas un dejas festivāls <br> 2025</h1>
-            <p class=" text-end mr-8 uppercase text-white font-semibold text-[2rem] md:text-[4vw] lg:text-[3vw] cd">6 - 11 Septembris</p>
-          </div>
+      <div class="w-full h-full flex flex-col ">
+
+        <div class="header-space  w-full h-[4rem] border border-white"></div>
+
+        <div class="heading-element max-w-screen-2xl mx-auto px-4  flex flex-col  flex-grow justify-between  w-full bg-gray-700  ">
+
+          <h1 class="hidde  heading   border page-titl leading-none  text-white font-bold   -tanslate-y-16   uppercase  text-left    cd">
+            Rīgas Vēsturiskās mūzikas un dejas festivāls <br> 2025
+          </h1>
+          <p class="hidde date border text-end  uppercase text-white font-semibold
+
+">6 - 11 Septembris</p>
+
         </div>
+
+        <div class="button-space flex justify-center items-center w-full h-[8rem] border border-white">
+          <ButtonProgramm class="" />
+        </div>
+      </div>
+
+
     </div>
 
 
@@ -81,20 +97,90 @@ function slideOpen(){
 <style scoped>
 
 
+@media (max-aspect-ratio: 4/5) {
+  /* Screens taller than wide */
 
-
-fade-black{
-  background-color: rgba(9,9,9,1);
-  animation: fade-black-animation 1s linear 0s forwards;
+.vertical{
+  font-size: 14vw;
 }
-.first-background-slide-up {
+
+}
+
+
+@media (max-aspect-ratio: 4/5) {
+  /* Screens taller than wide */
+
+  .vertical{
+    font-size: 14vw;
+  }
+
+}
+@media (max-aspect-ratio: 5/4) {
+  /* Screens taller than wide */
+
+  .horizontal{
+    font-size: 14vw;
+  }
+
+}
+
+
+/* --- For heading --- */
+@media (aspect-ratio: 1/1) {
+  .heading {
+    font-size: 10vw;
+  }
+}
+
+@media (max-aspect-ratio: 9999/10000) {
+  /* ---vert --- */
+  .heading {
+    font-size: 12vw;
+  }
+}
+
+@media (min-aspect-ratio: 10000/9999) {
+  /* ---hor --- */
+  .heading {
+    font-size: 12vh;
+  }
+}
+
+/* --- For date --- */
+@media (aspect-ratio: 1/1) {
+  .date {
+    font-size: 4vw;
+  }
+}
+
+@media (max-aspect-ratio: 9999/10000) {
+  /* ---vert --- */
+  .date {
+    font-size: 6vw;
+  }
+}
+
+@media (min-aspect-ratio: 10000/9999) {
+  /* ---hor--- */
+  .date {
+    font-size: 6vh;
+  }
+}
+
+
+
+.fade-black{
+  background-color: rgba(9,9,9,1);
+  animation: fade-black-animation 1.5s linear 0s forwards;
+}
+first-background-slide-up {
   opacity: 1;
   visibility: visible;
-  animation: fbsu 500ms linear 1s forwards; /* 3s delay before it begins */
+  animation: fbsu 500ms linear 1.5s forwards; /* 3s delay before it begins */
 }
 
 .slider-movement{
-  animation: sm 20s  forwards;
+  animation: sm 30s  forwards 1s;
 }
 @keyframes sm {
   from{
@@ -117,7 +203,7 @@ fade-black{
 
 @keyframes sfo {
   0% {
-    opacity: 0.8;
+    opacity: 1;
     visibility: visible;
   }
   99% {
@@ -158,8 +244,17 @@ fade-black{
     background-color: rgba(9,9,9,1);
 
   }
-  70%{
+  40%{
+       background-color: rgba(9,9,9,1);
+     }
+  50%{
     background-color: rgba(9,9,9,0);
+  }
+  60%{
+    background-color: rgba(9,9,9,0.5);
+  }
+  90%{
+    background-color: rgba(9,9,9,1);
 
   }
   100%{

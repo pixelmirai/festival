@@ -3,9 +3,10 @@
 </script>
 
 <template>
-<div class="w-screen min-w-[360px] ">
-  <header class="ticky op-0 z30 w-screen">
-<!--      <HeaderNavBar/>-->
+<div class="relative w-screen min-w-[360px] ">
+  <header class="fixed hidde  top-0 h-[4rem] w-full order border-white bg-black g-[rgba(9,9,9,0.3)] z-[999] ">
+    <div class="w-">
+    </div>
   </header>
    
   <main class="min-h-[90vh w-screen "  >

@@ -26,7 +26,9 @@ onMounted(async () => {
 </script>
 
 <template>
+
   <div class="">
+
 
     <div class=" background-video fixed z-[-20] top-0 w-screen h-screen overflow-hidden  bg-black">
       <video autoplay muted loop playsinline preload="none"  class="w-full h-full object-cover " src="assets/videos/herovideo-2.webm"></video>
@@ -36,11 +38,9 @@ onMounted(async () => {
 
 
 
-    <section class="relative  w-screen h-screen  min-h-[500px] lg:min-h-[800px] ">
+    <section class="relative  w-screen  h-screen  ">
      <SectionHero ref="hero"/>
-      <div class="fixed w-full flex justify-center items-center bottom-4  ">
-        <ButtonProgramm class="" />
-      </div>
+
 
     </section>
 
@@ -50,7 +50,7 @@ onMounted(async () => {
 
 
     <div class=" w-full  ">
-      <SectionFirst/>
+      <SectionFirst2/>
     </div>
     <div class="  w-screen h-96 ">
       aaaaaaa

@@ -5,7 +5,7 @@
 <template>
   <div
       style="box-shadow: #8c725d 5px 5px 1px"
-      class="w-32 h-20 max-h-full   border  border-white rounded-tl-md  text-white bg-black flex flex-col  justify-center items-center " >
+      class="w-[4rem] h-[5rem] max-h-full   border  border-gray-500 rounded-tl-md  text-white bg-black flex flex-col  justify-center items-center " >
     <div>
       <span class="font-bold uppercase hover:underline cursor-pointer">programma</span>
     </div>
