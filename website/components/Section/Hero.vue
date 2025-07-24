@@ -95,7 +95,6 @@ function slideOpen(){
         <div class="heading-element max-w-screen-4xl mx-auto px-4  flex flex-col  flex-grow justify-between  w-full   ">
 
           <h1
-              :class="{' translate-y-24 ':scrolled}"
               class="hidde  heading page-titl leading-none  text-white font-bold   transition-transform duration-1000   uppercase  text-left    cd">
             Rīgas Vēsturiskās mūzikas un dejas festivāls <br> 2025
           </h1>
@@ -104,7 +103,7 @@ function slideOpen(){
         </div>
 
         <div class="button-space flex justify-center items-center w-full h-[8rem] ">
-          <ButtonProgramm class="" />
+<!--          <ButtonProgramm class="" />-->
         </div>
       </div>
 
