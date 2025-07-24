@@ -9,25 +9,17 @@ const utils = useUtils()
 const heroSlider = ref(null);
 const sliderInterval = ref(null)
 const sliderIntervalCounter = ref(0)
+
+const scrolled = ref(false)
+
 defineExpose({
 
 })
 
 onMounted(()=>{
-
-  if(heroSlider.value){
-    sliderInterval.value = window.setInterval(() => {
-      if (heroSlider.value) {
-        heroSlider.value.moveLeft(0.001)
-        sliderIntervalCounter.value++
-      }
-
-      if (sliderIntervalCounter.value >= 500) {
-        clearInterval(sliderInterval.value)
-        sliderInterval.value = undefined
-      }
-    }, 20)
-  }
+  window.addEventListener('scroll',()=>{
+    scrolled.value = true;
+  })
 
 })
 
@@ -49,9 +41,38 @@ function slideOpen(){
     <div class="first-layer absolute flex w-full h-full overflow-hidden slider-fade-out">
       <div class="absolute w-full h-full overflow-x-hidden">
         <div class="absolute h-full flex flex-nowrap min-w-max slider-movement ">
-          <div v-for="i in 10" class="h-[100vh] w-[32rem]">
-            <img src="assets/images/maza-gilde-2.jpg" alt="" class="w-full h-full object-cover">
+          <div  class="slider-image-size">
+            <img src="assets/images/maza-gilde.jpg" alt="" class="w-full h-full object-cover">
           </div>
+          <div  class="slider-image-size">
+            <img src="assets/images/orchestra-church.webp" alt="" class="w-full h-full object-cover">
+          </div>
+          <div  class="slider-image-size">
+            <img src="assets/images/maris-kupcs-2.webp" alt="" class="w-full h-full object-cover">
+          </div>
+
+          <div  class="slider-image-size">
+            <img src="assets/images/elina-simkus.jpg" alt="" class="w-full h-full object-cover">
+          </div>
+          <div  class="slider-image-size">
+            <img src="assets/images/erik-bosgraf.jpg" alt="" class="w-full h-full object-cover">
+          </div>
+          <div  class="slider-image-size">
+            <img src="assets/images/monta-martinsone.jpg" alt="" class="w-full h-full object-cover">
+          </div>
+          <div  class="slider-image-size">
+            <img src="assets/images/anete-viluma.jpg" alt="" class="w-full h-full object-cover">
+          </div>
+          <div  class="slider-image-size">
+            <img src="assets/images/mauro.jpg" alt="" class="w-full h-full object-cover">
+          </div>
+          <div  class="w-[64rem] h-full ">
+            <img src="assets/images/collegium-2.jpg" alt="" class="w-full h-full object-cover">
+          </div>
+
+
+
+
         </div>
       </div>
     </div>
@@ -60,7 +81,7 @@ function slideOpen(){
 
     <div class="first-background first-background-slide-up  absolute block  w-full h-full transition-all duration-1000 ease-in-out  ">
       <div class="absolute flex justify-center items-center w-full h-full">
-        <img src="assets/images/clothes.webp" alt="" class="w-full h-full object-cover">
+        <img src="assets/images/maza-gilde-orchestra.webp" alt="" class="w-full h-full object-cover">
       </div>
       <div class="fade-black absolute w-full h-full "></div>
     </div>
@@ -73,10 +94,12 @@ function slideOpen(){
 
         <div class="heading-element max-w-screen-4xl mx-auto px-4  flex flex-col  flex-grow justify-between  w-full   ">
 
-          <h1 class="hidde  heading page-titl leading-none  text-white font-bold   -tanslate-y-16   uppercase  text-left    cd">
+          <h1
+              :class="{' translate-y-24 ':scrolled}"
+              class="hidde  heading page-titl leading-none  text-white font-bold   transition-transform duration-1000   uppercase  text-left    cd">
             Rīgas Vēsturiskās mūzikas un dejas festivāls <br> 2025
           </h1>
-          <p class="hidde date text-end  uppercase text-white font-semibold">6 - 11 Septembris</p>
+          <p class="hidde date date-slide-in text-end  uppercase text-white font-semibold">6 - 11 Septembris</p>
 
         </div>
 
@@ -95,32 +118,7 @@ function slideOpen(){
 <style scoped>
 
 
-@media (max-aspect-ratio: 4/5) {
-  /* Screens taller than wide */
 
-.vertical{
-  font-size: 14vw;
-}
-
-}
-
-
-@media (max-aspect-ratio: 4/5) {
-  /* Screens taller than wide */
-
-  .vertical{
-    font-size: 14vw;
-  }
-
-}
-@media (max-aspect-ratio: 5/4) {
-  /* Screens taller than wide */
-
-  .horizontal{
-    font-size: 14vw;
-  }
-
-}
 
 
 /* --- For heading --- */
@@ -178,7 +176,7 @@ function slideOpen(){
 }
 
 .slider-movement{
-  animation: sm 30s  forwards 1s;
+  animation: sm 20s  forwards 1s;
 }
 @keyframes sm {
   from{
@@ -194,9 +192,33 @@ function slideOpen(){
 .slider-fade-out {
   opacity: 0.8;
   visibility: visible;
-  animation: sfo 6s linear forwards;
+  animation: sfo 8s linear forwards;
 }
 
+.slider-image-size{
+  width: 28rem;
+  height: 100vh;
+}
+
+.date-slide-in{
+  opacity: 1;
+  transform: translateX(0rem);
+  animation: date-slide-in-animation 1s ease-out forwards;
+}
+@keyframes date-slide-in-animation {
+  0%{
+    opacity: 0;
+    transform: translateX(-10rem);
+  }20%
+     {
+       opacity: 0;
+       transform: translateX(-10rem);
+     }
+     100%{
+       opacity: 1;
+       transform: translateX(0rem);
+     }
+}
 
 
 @keyframes sfo {
@@ -204,7 +226,7 @@ function slideOpen(){
     opacity: 1;
     visibility: visible;
   }
-  25%{
+  20%{
     opacity: 1;
     visibility: visible;
   }
