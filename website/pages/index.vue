@@ -76,10 +76,10 @@ onMounted(async () => {
       <SectionThird/>
     </div>
     <div ref="program" class="  w-screen h-96 ">
-
+        <SectionProgram/>
     </div>
     <div class=" w-screen h-96 ">
-      aaaaaaa
+
     </div>
 
   </div>
