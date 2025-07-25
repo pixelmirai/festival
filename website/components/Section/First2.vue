@@ -58,7 +58,7 @@ function calculateBottomShadow(vhr){
 </script>
 
 <template>
-  <div   ref="section"  class=" "  style="background-color: #ffffff">
+  <div   ref="section"  class=" max-w-screen overflow-clip"  style="background-color: #ffffff">
     <div class="max-w-screen-2xl mx-auto">
       <div class=" flex flex-col-reverse md:flex-row py-16  max-w-screen-2xl mx-auto "
 
@@ -81,7 +81,7 @@ function calculateBottomShadow(vhr){
                  class="absolute w-full h-full object-cover i">
             <img src="assets/images/anete-viluma.jpg" alt=""
                  :class="imagesInView ? 'image-5' : 'opacity-0'"
-                 class="absolute w-full h-full object-cover i">
+                 class="absolute w-full h-full object-cover i z-20">
           </div>
 
         </div>

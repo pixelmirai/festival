@@ -4,7 +4,7 @@
 
 <template>
 
-      <div class="w-screen  bg-white">
+      <div class="w-screen overflow-clip  bg-white">
 
         <div class="w-full h-[20rem]">
           <div class="h-[20rem] max-w-screen-4xl overflow-x-hidden mx-auto">
