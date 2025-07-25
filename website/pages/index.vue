@@ -65,22 +65,22 @@ onMounted(async () => {
     </section>
 
 
+    <section class=" w-full  ">
+      <SectionDescription/>
+    </section>
 
 
+    <section class="  ">
+      <SectionPartners/>
+    </section>
 
+    <section>
+        <SectionGallery/>
+    </section>
 
-    <div class=" w-full  ">
-      <SectionFirst2/>
-    </div>
-    <div class="  ">
-      <SectionThird/>
-    </div>
-    <div ref="program" class="  w-screen h-96 ">
+    <section ref="program" class="  ">
         <SectionProgram/>
-    </div>
-    <div class=" w-screen h-96 ">
-
-    </div>
+    </section>
 
   </div>
 </template>

@@ -19,14 +19,7 @@ const bottomShadow = ref(0);
 onMounted(()=>{
   if(section.value){
     useInView(section.value,()=>{
-      window.addEventListener("scroll",()=>{
-        visibleHeightRatio.value = utils.getVisibleHeightRatio(section.value);
 
-          rightShadow.value = calculateRightShadow(visibleHeightRatio.value);
-          bottomShadow.value = calculateBottomShadow(visibleHeightRatio.value)
-
-
-      })
       inView.value = true;
     },0.2)
   }
@@ -58,7 +51,7 @@ function calculateBottomShadow(vhr){
 </script>
 
 <template>
-  <div   ref="section"  class=" max-w-screen overflow-clip"  style="background-color: #ffffff">
+  <div   ref="section"  class=" max-w-screen overflow-clip bg-white"  style="background-color: #ffffff">
     <div class="max-w-screen-2xl mx-auto">
       <div class=" flex flex-col-reverse md:flex-row py-16  max-w-screen-2xl mx-auto "
 
@@ -92,14 +85,18 @@ function calculateBottomShadow(vhr){
 
 
               <div
-                  :style="{
-  boxShadow: `black -${bottomShadow}rem 2px 0,
-  black 2px -${rightShadow}rem 0`
-}"
+                  :class="{'description-text-shadow' : inView}"
 
                   class="flex flex-col pb-16 pr-16   gap-12  ">
-                <p class=" text-3xl  md:text-5xl font-semibold text-center ">  {{text1}}</p>
-                <p class="text-xl ">{{text2}}</p>
+                <p class=" text-3xl  md:text-5xl font-semibold text-center ">
+                  {{text1}}
+
+                </p>
+                <p class="text-xl ">
+
+                  {{text2}}
+
+                </p>
               </div>
             </div>
           </div>
@@ -109,10 +106,18 @@ function calculateBottomShadow(vhr){
 
       </div>
 
-      <div class="px-8 pb-8 hidden  ">
-        <p>{{text3}}</p>
-      </div>
+      <div class="max-w-screen-lg text-center  text-xl  md:text-2xl   font-serif px-2 py-8   mx-auto">
+        <p class=" ">
+          Rīgas Vēsturiskās mūzikas un dejas festivāls ir kā mājas, kurā gan skatītāji un klausītāji, gan paši mūziķi un mākslinieki ar īpašu prieku atgriežas, lai atgūtu harmoniju, smeltos enerģiju, kaut uz brīdi iejustos augsti izglītoto un smalkjūtīgo baroka laika galminieku ādā, un, kas īpaši būtiski – pārsteigumā secinātu, cik patiesībā daudz mēs vēl varam atklāt.
+        </p>
+        <p>
+          Visi festivāla koncerti tiek atskaņoti tikai un vienīgi ar vēsturisko mūzikas instrumentu oriģināliem vai to kopijām, dziedātāju balsis pārvalda baroka laika ornamentus un retoriskos smalkumus, pilnībā aizslaukot māņu mītus par seno mūziku kā kaut ko vecmodīgu. Tieši pretēji – pateicoties Rīgas Vēsturiskās mūzikas un dejas festivāla norisēm, Rīga un Latvija ir kļuvusi par vienu no nozīmīgākajiem senās mūzikas centriem Eiropā.
+        </p>
+        <p>
+          Festivāls piedāvā klausītājiem ceļojumu laikā, iepazīstinot ar Eiropas 17.–18. gadsimta mūziku un vēsturiskajiem instrumentiem. Programmā iekļauti gan klasiskās baroka mūzikas šedevri, gan arī mazāk zināmi, bet muzikāli vērtīgi darbi.
 
+        </p>
+      </div>
 
     </div>
 
@@ -128,6 +133,7 @@ function calculateBottomShadow(vhr){
   opacity: 1;
   box-shadow: black -5rem 2px 0,
   black 2px -2rem 0;
+  animation: description-text-shadow-fade 3s ;
 
 }
 @keyframes description-text-shadow-fade {
