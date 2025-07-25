@@ -16,8 +16,8 @@ const program = [
 
 <template>
 <div class="bg-white min-h-96 ">
-    <div class="max-w-screen-2xl ">
-        <div class="flex flex-col mx-auto  max-w-screen-md ">
+    <div class="max-w-screen-2xl mx-auto ">
+        <div class="flex flex-col  mx-auto  max-w-screen-md ">
 
 
           <div class="program-item   mx-4    ">
