@@ -72,6 +72,9 @@ onMounted(async () => {
     <div class=" w-full  ">
       <SectionFirst2/>
     </div>
+    <div class="  ">
+      <SectionThird/>
+    </div>
     <div ref="program" class="  w-screen h-96 ">
 
     </div>

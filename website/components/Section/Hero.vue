@@ -39,6 +39,7 @@ function slideOpen(){
 
 
     <div class="first-layer absolute flex w-full h-full overflow-hidden slider-fade-out">
+
       <div class="absolute w-full h-full overflow-x-hidden">
         <div class="absolute h-full flex flex-nowrap min-w-max slider-movement ">
           <div  class="slider-image-size">
@@ -175,7 +176,8 @@ function slideOpen(){
 }
 
 .slider-movement{
-  animation: sm 20s  forwards 1s;
+  will-change: transform;
+  animation: sm 25s linear  forwards 1s;
 }
 @keyframes sm {
   from{
@@ -195,7 +197,7 @@ function slideOpen(){
 }
 
 .slider-image-size{
-  width: 28rem;
+  width: 24rem;
   height: 100vh;
 }
 
@@ -204,6 +206,8 @@ function slideOpen(){
   transform: translateX(0rem);
   animation: date-slide-in-animation 1s ease-out forwards;
 }
+
+
 @keyframes date-slide-in-animation {
   0%{
     opacity: 0;
