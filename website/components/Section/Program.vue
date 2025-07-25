@@ -15,9 +15,16 @@ const program = [
 </script>
 
 <template>
-<div class="bg-white min-h-96 ">
-    <div class="max-w-screen-2xl mx-auto ">
-        <div class="flex flex-col  mx-auto  max-w-screen-md ">
+<div class="bg-white pb-32  ">
+    <div class="max-w-screen-2xl mx-auto  ">
+
+      <div>
+        <h2 class="text-center py-32  uppercase text-5xl   md:text-6xl   lg:text-7xl font-serif ">
+          Festivāla programma
+        </h2>
+      </div>
+
+        <div class="programm-list flex flex-col  mx-auto  max-w-screen-md ">
 
 
           <div class="program-item   mx-4    ">
