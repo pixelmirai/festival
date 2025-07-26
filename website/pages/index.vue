@@ -6,7 +6,7 @@ import axios from "axios"
 import { useWindowSize } from "@/composables/useWindowSize"
 import { useInView } from "@/composables/useInView"
 import { useScrollHandler } from "@/composables/useScrollHandler"
-import ButtonProgramm from "~/components/ButtonProgramm.vue";
+
 
 
 const slider = ref(null)

@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia';
 import axios from 'axios';
 
-const SITE_NAME = "groovediggers3";
+const SITE_NAME = "rvmdfcontent";
 const BASE_URL = `https://public-api.wordpress.com/rest/v1.1/sites/${SITE_NAME}.wordpress.com`;
 
 export const useWpPosts = defineStore('posts', {

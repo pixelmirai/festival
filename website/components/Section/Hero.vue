@@ -42,9 +42,7 @@ function slideOpen(){
 
       <div class="absolute w-full h-full overflow-x-hidden">
         <div class="absolute h-full flex flex-nowrap min-w-max slider-movement ">
-          <div  class="slider-image-size">
-            <img src="assets/images/maza-gilde.jpg" alt="" class="w-full h-full object-cover">
-          </div>
+
           <div  class="slider-image-size">
             <img src="assets/images/orchestra-church.webp" alt="" class="w-full h-full object-cover">
           </div>
