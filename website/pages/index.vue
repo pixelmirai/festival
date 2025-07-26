@@ -15,11 +15,12 @@ const posts = ref([])
 
 
 const program = ref(null)
+const partners = ref(null);
 const programClicked = ref(false)
 
 function handleProgramButtonClick(){
   programClicked.value = true;
-  scrollToSectionWithOffset(program.value,0)
+  scrollToSectionWithOffset(partners.value,-50)
 }
 
 function scrollToSectionWithOffset(element, offset = 0) {
@@ -30,7 +31,7 @@ function scrollToSectionWithOffset(element, offset = 0) {
 
     window.scrollTo({
       top: scrollPosition,
-      behavior: 'smooth'
+
     });
   }
 }
@@ -70,12 +71,13 @@ onMounted(async () => {
     </section>
 
 
-    <section class="  ">
-      <SectionPartners/>
-    </section>
+
 
     <section>
         <SectionGallery/>
+    </section>
+    <section ref="partners" class="  ">
+      <SectionPartners/>
     </section>
 
     <section ref="program" class="  ">
