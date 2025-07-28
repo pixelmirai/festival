@@ -77,7 +77,7 @@ onMounted(async () => {
 
 
     <section>
-        <SectionGallery/>
+        <SectionGallery2/>
     </section>
     <section ref="partners" class="  ">
       <SectionPartners/>
