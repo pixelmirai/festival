@@ -51,73 +51,32 @@ function calculateBottomShadow(vhr){
 </script>
 
 <template>
-  <div   ref="section"  class=" max-w-screen overflow-clip bg-white"  style="background-color: #ffffff">
+  <div   ref="section"  class=" max-w-screen overflow-x-clip bg-white"  >
     <div class="max-w-screen-2xl mx-auto">
-      <div class=" flex flex-col-reverse md:flex-row py-16  max-w-screen-2xl mx-auto "
-
-      >
+      <div class=" flex flex-col-reverse md:flex-row py-16  max-w-screen-2xl mx-auto ">
 
         <div  class="relative flex justify-center items-center w-full  md:w-1/2 min-w-[360px] ">
-          <div ref="images"
-              class="relative w-[300px]  " style="aspect-ratio: 10/16">
-            <img src="assets/images/elina-simkus.jpg" alt=""
-                 :class="imagesInView ? 'image-1' : 'opacity-0'"
-                 class="absolute w-full h-full object-cover ">
-            <img src="assets/images/monta-martinsone.jpg" alt=""
-                 :class="imagesInView ? 'image-2' : 'opacity-0'"
-                 class="absolute w-full h-full object-cover  ">
-            <img src="assets/images/anete-viluma.jpg" alt=""
-                 :class="imagesInView ? 'image-3' : 'opacity-0'"
-                 class="absolute w-full h-full object-cover i">
-            <img src="assets/images/anete-viluma.jpg" alt=""
-                 :class="imagesInView ? 'image-4' : 'opacity-0'"
-                 class="absolute w-full h-full object-cover i">
-            <img src="assets/images/anete-viluma.jpg" alt=""
-                 :class="imagesInView ? 'image-5' : 'opacity-0'"
-                 class="absolute w-full h-full object-cover i z-20">
-          </div>
-
+         <FallingImages class="z-10"/>
         </div>
         <div class="flex justify-center items-center w-full  md:w-1/2 min-w-[360px] ">
 
-          <div class="p-8  ">
+          <div class="big-text  p-8  ">
             <div class="overflow-clip pb-2 pr-2  ">
-
-
               <div
                   :class="{'description-text-shadow' : inView}"
-
                   class="flex flex-col pb-16 pr-16   gap-12  ">
-                <p class=" text-3xl  md:text-5xl font-semibold text-center ">
+                <p class=" text-3xl  md:text-5xl font-extralight text-center ">
                   {{text1}}
-
-                </p>
-                <p class="text-xl ">
-
-                  {{text2}}
 
                 </p>
               </div>
             </div>
           </div>
+
         </div>
-
-
-
       </div>
 
-      <div class="max-w-screen-lg text-center  text-xl  md:text-2xl   font-serif px-2 py-8   mx-auto">
-        <p class=" ">
-          Rīgas Vēsturiskās mūzikas un dejas festivāls ir kā mājas, kurā gan skatītāji un klausītāji, gan paši mūziķi un mākslinieki ar īpašu prieku atgriežas, lai atgūtu harmoniju, smeltos enerģiju, kaut uz brīdi iejustos augsti izglītoto un smalkjūtīgo baroka laika galminieku ādā, un, kas īpaši būtiski – pārsteigumā secinātu, cik patiesībā daudz mēs vēl varam atklāt.
-        </p>
-        <p>
-          Visi festivāla koncerti tiek atskaņoti tikai un vienīgi ar vēsturisko mūzikas instrumentu oriģināliem vai to kopijām, dziedātāju balsis pārvalda baroka laika ornamentus un retoriskos smalkumus, pilnībā aizslaukot māņu mītus par seno mūziku kā kaut ko vecmodīgu. Tieši pretēji – pateicoties Rīgas Vēsturiskās mūzikas un dejas festivāla norisēm, Rīga un Latvija ir kļuvusi par vienu no nozīmīgākajiem senās mūzikas centriem Eiropā.
-        </p>
-        <p>
-          Festivāls piedāvā klausītājiem ceļojumu laikā, iepazīstinot ar Eiropas 17.–18. gadsimta mūziku un vēsturiskajiem instrumentiem. Programmā iekļauti gan klasiskās baroka mūzikas šedevri, gan arī mazāk zināmi, bet muzikāli vērtīgi darbi.
 
-        </p>
-      </div>
 
     </div>
 

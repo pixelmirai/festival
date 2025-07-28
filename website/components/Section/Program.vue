@@ -36,7 +36,7 @@ const noslegumsOpen = ref(false);
         </h2>
       </div>
 
-      <div class="programm-list flex flex-col mx-auto max-w-screen-md">
+      <div class="programm-list flex flex-col mx-auto max-w-screen-2xl">
 
         <!-- 6. septembris -->
         <div class="program-item mx-4">
@@ -132,7 +132,7 @@ const noslegumsOpen = ref(false);
               </a>
             </div>
 
-            <!-- existing snippet kept as-is -->
+
             <div class="description py-8 overflow-clip"
                  :class="regenceSonoreOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
@@ -151,7 +151,7 @@ const noslegumsOpen = ref(false);
               </article>
             </div>
 
-            <div class="flex">
+            <div class="flex ">
               <div class="flex justify-start items-end w-1/2">
                 <a href="https://www.bilesuparadize.lv/lv/event/154875" target="_blank" rel="noopener noreferrer">
                   <button

@@ -25,9 +25,9 @@ onMounted(async ()=>{
 </script>
 
 <template>
-<div class=" background  w-screen grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4   ">
-  <div v-for="i in 12"  class="flex justify-center items-center w-full    border-transparent " style="aspect-ratio: 1.6;">
-      <div class="w-full h-full m-2 sm:m-2 lg:m-2      bg-blue-950">
+<div class=" background  w-screen grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4  p-2  ">
+  <div v-for="i in 12"  class="flex justify-center items-center w-full    order-transparent " style="aspect-ratio: 1.6;">
+      <div class="w-full h-full m-2   bg-blue-950">
         <img src="https://rvmdfcontent.wordpress.com/wp-content/uploads/2025/07/neymann-ensemble.jpg" alt=""
         class="w-full h-full object-cover"
         >

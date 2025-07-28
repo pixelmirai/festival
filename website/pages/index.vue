@@ -70,7 +70,10 @@ onMounted(async () => {
       <SectionDescription/>
     </section>
 
+  <section>
+    <SectionDescription2/>
 
+  </section>
 
 
     <section>
