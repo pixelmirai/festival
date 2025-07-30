@@ -65,7 +65,7 @@ function calculateBottomShadow(vhr){
               <div
                   :class="{'description-text-shadow' : inView}"
                   class="flex flex-col pb-16 pr-16   gap-12  ">
-                <p class=" text-3xl  md:text-5xl font-extralight text-center ">
+                <p class="   md:text-3xl  lg:text-5xl font-extralight text-center ">
                   {{text1}}
 
                 </p>
