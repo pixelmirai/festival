@@ -24,6 +24,8 @@ function handleProgramButtonClick(){
   scrollToSectionWithOffset(partners.value,-50)
 }
 
+
+
 function scrollToSectionWithOffset(element, offset = 0) {
   const section = element;
   if (section) {
@@ -43,7 +45,33 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="">
+  <div class="overflow-x-clip">
+    <header class="fixed  top-0 h-[3rem] w-full   bg-[rgba(9,9,9,0.3) z-[999] ">
+      <div class="w-full h-full flex justify-center md:justify-end items-center">
+        <div class="flex gap-1  ">
+
+            <button @click="handleProgramButtonClick" class="bg-black text-white px-2 py-1 font-extrabold rounded-sm    uppercase  ">
+              <span>programma</span>
+            </button>
+
+
+          <a href="https://www.earlymusic.lv">
+            <div class="bg-black text-white px-2 py-1 font-extrabold rounded-sm   uppercase  ">
+              <span>kontakti</span>
+            </div>
+          </a>
+
+          <a href="https://www.earlymusic.lv">
+            <div class="bg-black text-white px-2 py-1 font-extrabold rounded-sm    uppercase  ">
+              <span>earlymusic</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+
+    </main>
 
     <div class=" background-video fixed z-[-20] top-0 w-screen h-screen overflow-hidden  bg-black">
       <video autoplay muted loop playsinline preload="none"  class="w-full h-full object-cover " src="assets/videos/remf-3.webm"></video>
@@ -85,7 +113,7 @@ onMounted(async () => {
       <SectionPartners/>
     </section>
 
-    <section ref="program" class="  ">
+    <section id="program" ref="program" class="  ">
         <SectionProgram/>
     </section>
 

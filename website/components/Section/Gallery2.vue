@@ -49,7 +49,7 @@ onMounted(()=>{
 
 <style scoped>
 .perspective{
-  perspective: 800px;
+  perspective: 1200px;
 }
 
 
