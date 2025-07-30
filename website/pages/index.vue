@@ -6,6 +6,7 @@ import axios from "axios"
 import { useWindowSize } from "@/composables/useWindowSize"
 import { useInView } from "@/composables/useInView"
 import { useScrollHandler } from "@/composables/useScrollHandler"
+import GalleryMobile from "~/components/Section/GalleryMobile.vue";
 
 
 
@@ -77,7 +78,8 @@ onMounted(async () => {
 
 
     <section>
-        <SectionGallery2/>
+        <SectionGallery2 class="hidden md:block"/>
+        <GalleryMobile class="md:hidden block"/>
     </section>
     <section ref="partners" class="  ">
       <SectionPartners/>
