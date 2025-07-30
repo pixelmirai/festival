@@ -11,7 +11,7 @@
 
   <footer>
 
-<!--    <FooterContent/>-->
+    <SectionContact/>
   </footer>
 </div>
 
