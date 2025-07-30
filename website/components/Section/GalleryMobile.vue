@@ -10,10 +10,13 @@ onMounted(()=>{
 </script>
 
 <template>
-  <div class="relative w-[100vw] h-[42rem]  bg-white overflow-x-clip    ">
+  <div>
+
+
+  <div class="relative w-[100vw] h-[36rem]    bg-white overflow-x-clip    ">
     <div class="first-layer absolute w-full h-full flex justify-center items-center">
 
-      <div class="central-rectangle absolute w-[360px] h-[32rem] border-4 border-black  ">
+      <div class="central-rectangle absolute w-[320px]  border-2  border-black  " style="aspect-ratio: 0.65">
         <div class="absolute w-full  h-full opacity-80">
           <img src="assets/images/collegium-door-ink-writing.png" alt="" class="w-full h-full object-cover  ">
         </div>
@@ -27,7 +30,7 @@ onMounted(()=>{
 
     <div class="second-layer gallery absolute flex justify-center items-center w-full h-full object-cover  ">
       <div class="perspective   relative  opacity-75  ">
-        <div class=" container relative overflow-y-clip  w-[360px] grid grid-cols-2 gap-2   ">
+        <div class=" container relative overflow-y-clip  w-[240px] grid grid-cols-2 gap-2   ">
           <div v-for="i in 8 " class="w-full t  flex justify-center items-center aspect-square ">
             <img src="assets/images/orchestra-church.webp" alt="" class="">
           </div>
@@ -37,14 +40,15 @@ onMounted(()=>{
 
   </div>
   <div>
-    <div class="side-images flex justify-between  items-center max-w-screen-2xl w-full h-full bg-white ">
-      <div class=" h-[85%] md:h-[55%] xl:h-full">
+    <div class="side-images flex justify-between  items-center w-full h-full bg-white ">
+      <div class=" ">
         <img src="assets/images/maza-gilde-ink.png" alt="" class="h-full  object-contain ">
       </div>
-      <div class="h-[85%] md:h-[55%] xl:h-full ">
+      <div class="">
         <img src="assets/images/magdalenas-baznica.png" alt="" class="h-full  object-contain ">
       </div>
     </div>
+  </div>
   </div>
 </template>
 
