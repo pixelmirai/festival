@@ -11,6 +11,7 @@ onMounted(()=>{
 
 <template>
 <div class="relative w-[100vw] h-[48rem]  bg-white overflow-clip    ">
+
   <div class="first-layer absolute w-full h-full flex justify-center items-center">
 
     <div class="side-images absolute flex justify-between  items-center max-w-screen-2xl w-full h-full  ">
@@ -37,8 +38,8 @@ onMounted(()=>{
   <div class="second-layer gallery absolute flex justify-center items-center w-full h-full object-cover  ">
     <div class="perspective   relative  opacity-75  ">
       <div class=" container relative overflow-y-clip  w-[360px] grid grid-cols-2 gap-2   ">
-        <div v-for="i in 8 " class="w-full t  flex justify-center items-center aspect-square ">
-          <img src="assets/images/orchestra-church.webp" alt="" class="">
+        <div v-for="i in 8 " class=" w-full t  flex justify-center items-center aspect-square ">
+          <img src="assets/images/orchestra-church.webp" alt="" class="image">
         </div>
       </div>
     </div>
@@ -51,7 +52,9 @@ onMounted(()=>{
 .perspective{
   perspective: 1200px;
 }
-
+.image{
+  box-shadow: beige 10px 10px 0px;
+}
 
   .container{
     transform: rotateZ(50deg) rotateX(40deg)  rotateY(-50deg) ;
