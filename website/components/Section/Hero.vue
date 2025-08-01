@@ -69,9 +69,6 @@ function slideOpen(){
             <img src="assets/images/collegium-2.jpg" alt="" class="w-full h-full object-cover">
           </div>
 
-
-
-
         </div>
       </div>
     </div>
@@ -97,7 +94,7 @@ function slideOpen(){
               class="hidde  heading page-titl leading-none  text-white font-bold   transition-transform duration-1000   uppercase  text-left    cd">
             Rīgas Vēsturiskās mūzikas un dejas festivāls <br> 2025
           </h1>
-          <p class="hidde date date-slide-in text-end  uppercase text-white font-semibold">6 - 11 Septembris</p>
+          <p class="hidde date date-slide-in text-end  uppercase text-white font-semibold">6. Septembris - 11. Oktobris</p>
 
         </div>
 

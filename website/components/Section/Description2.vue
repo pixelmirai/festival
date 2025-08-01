@@ -5,7 +5,7 @@ const text = " Festivāls piedāvā bagātīgu programmu ar senās mūzikas konc
 
 <template>
 <div class="w-full bg-white">
-  <div class="max-w-screen-2xl mx-auto px-2  flex flex-wrap min-h-[32rem] border-t-2 border-gray-300 ">
+  <div class="max-w-screen-2xl mx-auto px-2 py-8   flex flex-wrap min-h-[32rem] border-t-2 border-gray-300 ">
       <div class="w-1/2 min-w-[360px] flex flex-grow  justify-center items-center my-4 ">
           <article>
             <p class="text-xl  font-serif">
@@ -15,7 +15,7 @@ const text = " Festivāls piedāvā bagātīgu programmu ar senās mūzikas konc
           </article>
       </div>
       <div class="w-1/2 min-w-[360px] flex flex-grow justify-center items-center  ">
-        <div class="image-thing relative h-[24rem] " style="aspect-ratio: 10/16">
+        <div class="image-thing relative h-[32rem] " style="aspect-ratio: 10/16">
           <div class="absolute w-full h-full rounded-t-full overflow-clip">
             <img src="assets/images/collegium-window-and-door-person.jpg" alt="" class="w-full h-full object-cover">
           </div>

@@ -77,7 +77,7 @@ onMounted(async () => {
       <video autoplay muted loop playsinline preload="none"  class="w-full h-full object-cover " src="assets/videos/remf-3.webm"></video>
     </div>
 
-    <section class="relative  w-screen  h-screen  ">
+    <section class="relative  w-screen  h-[100dvh]  ">
       <div class="absolute w-full h-full">
         <SectionHero class="absolute" ref="hero"/>
       </div>
