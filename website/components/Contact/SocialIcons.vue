@@ -91,6 +91,14 @@
       #ffffff 3px 3px 2px 0px;
 }
 
+.x svg{
+  transition-duration: 500ms;
+}
+.x:hover svg{
+
+  transform: scale(1.2);
+}
+
 .yt{
   color: #ee0f0f;
   box-shadow:

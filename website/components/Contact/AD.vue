@@ -27,7 +27,7 @@
             <div class="">
               <i class="bi bi-phone-fill  text-[2rem]"></i>
             </div>
-            <div class="">
+            <div class="whitespace-nowrap">
               <span>+371 22477541</span>
             </div>
           </div>

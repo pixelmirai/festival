@@ -5,9 +5,10 @@
 </script>
 
 <template>
-<div class="">
+<div class="bg-black ">
  <ContactSM class="block md:hidden "/>
-  <ContactMD class=" "/>
+  <ContactMD class=" hidden md:block 2xl:hidden "/>
+  <ContactLG class="hidden 2xl:block "/>
 </div>
 </template>
 
