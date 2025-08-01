@@ -8,6 +8,7 @@
       <ContactSocialIcons/>
   </div>
 
+
   <div class="flex flex-col items-center">
 
     <div class="w-screen flex justify-center bg-[#1a1a1a]  ">
