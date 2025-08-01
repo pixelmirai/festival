@@ -5,9 +5,9 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       },
-      titleTemplate: '%s name here',
+      titleTemplate: '%s Rigas vesturiskas muzikas un dejas festivals 2025',
       meta: [
-        { name: 'description', content: 'description here...' },
+        { name: 'description', content: 'Rigas vesturiskas muzikas un dejas festivals 2025' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { charset: 'utf-8' },
         { name: 'robots', content: 'index, follow' }
@@ -17,6 +17,11 @@ export default defineNuxtConfig({
           rel: "stylesheet",
           href: "https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css",
         },
+        {
+          rel: 'icon',
+          type: 'image/webp',
+          href: '/logo.webp'
+        }
       ],
     },
   },

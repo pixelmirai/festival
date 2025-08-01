@@ -1,10 +1,20 @@
 <script setup lang="js">
+import {useInView} from "~/composables/useInView.js";
 
-
+const inView = ref(false)
+const gallery = ref(null);
 
 
 onMounted(()=>{
-
+  if (gallery.value){
+    useInView(gallery.value,()=>{
+      inView.value = true;
+    })
+  } else {
+    setTimeout(()=>{
+      inView.value = true;
+    },500)
+  }
 
 })
 </script>
@@ -35,10 +45,13 @@ onMounted(()=>{
   </div>
 
 
-  <div class="second-layer gallery absolute flex justify-center items-center w-full h-full object-cover  ">
+  <div ref="gallery" class="second-layer gallery absolute flex justify-center items-center w-full h-full object-cover  ">
     <div class="perspective   relative  opacity-75  ">
-      <div class=" container relative overflow-y-clip  w-[360px] grid grid-cols-2 gap-2   ">
-        <div v-for="i in 8 " class=" w-full t  flex justify-center items-center aspect-square ">
+      <div  class="  container relative overflow-y-clip  w-[360px] grid grid-cols-2 gap-2   ">
+        <div v-for="i in 8 "
+             :class="{'translate-y-[44rem]' : !inView}"
+             style="transition-duration: 5s"
+             class=" w-full flex justify-center items-center aspect-square  ease-in-out ">
           <img src="assets/images/orchestra-church.webp" alt="" class="image">
         </div>
       </div>
@@ -52,13 +65,12 @@ onMounted(()=>{
 .perspective{
   perspective: 1200px;
 }
-.image{
-  box-shadow: beige 10px 10px 0px;
-}
+
 
   .container{
     transform: rotateZ(50deg) rotateX(40deg)  rotateY(-50deg) ;
   }
+
 
 
 

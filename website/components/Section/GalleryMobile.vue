@@ -1,10 +1,20 @@
 <script setup lang="js">
+import {useInView} from "~/composables/useInView.js";
 
-
+const inView = ref(false)
+const gallery = ref(null);
 
 
 onMounted(()=>{
-
+  if (gallery.value){
+    useInView(gallery.value,()=>{
+      inView.value = true;
+    })
+  } else {
+    setTimeout(()=>{
+      inView.value = true;
+    },500)
+  }
 
 })
 </script>
@@ -31,7 +41,10 @@ onMounted(()=>{
     <div class="second-layer gallery absolute flex justify-center items-center w-full h-full object-cover  ">
       <div class="perspective   relative  opacity-75  ">
         <div class=" container relative overflow-y-clip  w-[240px] grid grid-cols-2 gap-2   ">
-          <div v-for="i in 8 " class="w-full t  flex justify-center items-center aspect-square ">
+          <div v-for="i in 8 "
+               :class="{'translate-y-[30rem]' : !inView}"
+               style="transition-duration: 3s"
+               class="w-full t  flex justify-center items-center aspect-square ">
             <img src="assets/images/orchestra-church.webp" alt="" class="">
           </div>
         </div>

@@ -56,6 +56,7 @@ function calculateBottomShadow(vhr){
       <div class=" flex flex-col-reverse md:flex-row py-16  max-w-screen-2xl mx-auto ">
 
         <div  class="relative flex justify-center items-center w-full  md:w-1/2 min-w-[360px] ">
+
          <FallingImages class="z-10"/>
         </div>
         <div class="flex justify-center items-center w-full  md:w-1/2 min-w-[360px] ">
@@ -64,9 +65,11 @@ function calculateBottomShadow(vhr){
             <div class="overflow-clip pb-2 pr-2  ">
               <div
                   :class="{'description-text-shadow' : inView}"
-                  class="flex flex-col pb-16 pr-16   gap-12  ">
-                <p class="   md:text-3xl  lg:text-5xl font-extralight text-center ">
-                  {{text1}}
+                  class="flex flex-col pb-16 pr-16 overflow-clip  gap-12  ">
+                <p
+                    :class="{'translate-y-[100%] opacity-0' : !inView}"
+                    class="  text-3xl md:text-3xl transition-all duration-1000 lg:text-5xl font-extralight text-center ">
+                  Rīgas Vēsturiskās mūzikas un dejas festivāls 2025 ir starptautisks kultūras notikums, kas notiks no 6. septembra līdz 11. oktobrim dažādās Rīgas koncertvietās.
 
                 </p>
               </div>

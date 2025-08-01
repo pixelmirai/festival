@@ -8,8 +8,8 @@ const text = " Festivāls piedāvā bagātīgu programmu ar senās mūzikas konc
   <div class="max-w-screen-2xl mx-auto px-2 py-8   flex flex-wrap min-h-[32rem] border-t-2 border-gray-300 ">
       <div class="w-1/2 min-w-[360px] flex flex-grow  justify-center items-center my-4 ">
           <article>
-            <p class="text-xl  font-serif">
-              {{text}}
+            <p class=" text-xl  lg:text-2xl  font-serif">
+              Festivāls piedāvā bagātīgu programmu ar senās mūzikas koncertiem, koncertlekcijām un garīgās mūzikas notikumiem, pulcējot augsta līmeņa māksliniekus no Latvijas un ārzemēm. Tajā uzstāsies tādi atzīti kolektīvi kā Collegium Musicum Riga, Neymann Ensemble, Regence Sonore un Coloquio 6, kā arī ievērojami solisti, piemēram, Ēriks Bosgrāfs, Elīna Šimkus un Mauro Pinciaroli.
             </p>
 
           </article>
