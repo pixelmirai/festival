@@ -3,7 +3,8 @@
 </script>
 
 <template>
-  <div class="flex justify-center space-x-4  -translate-y-[3rem  ">
+  <div class="flex justify-center space-x-4   ">
+
     <a href="https://www.facebook.com/earlymusiclv">
     <div class="fb relative aspect-square w-[4rem] cursor-pointer   bg-black ">
       <div class="absolute flex justify-center items-center w-full h-full ">

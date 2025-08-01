@@ -3,16 +3,21 @@
 </script>
 
 <template>
-<div class="min-h-screen n  bg-black">
-  <div class="flex justify-center items-center w-[20rem] mx-auto   h-[6rem]">
-      <ContactSocialIcons/>
+<div class="min-h-screen ">
+  <div class="relative flex justify-center items-center mx-auto  w-full bg-white    h-[4.3rem]">
+    <div class="absolute bottom-0 w-full h-1/2 bg-[#1a1a1a] "></div>
+    <div class="absolute w-full h-full">
+      <ContactSocialIcons class=" -translate-y-[3rem "/>
+    </div>
+
+
   </div>
 
 
   <div class="flex flex-col items-center">
 
     <div class="w-screen flex justify-center bg-[#1a1a1a]  ">
-      <div class="card-maris-kupcs relative aspect-square bg-[#1a1a1a]  text-[#d4af37]  h-[20rem]   shadow-lg font-serif ">
+      <div class="card-maris-kupcs relative aspect-square bg-[#1a1a1a]  text-[#d4af37]  h-[20rem]    font-serif ">
         <div class="absolute flex flex-col py-[3rem]   items-center w-full h-full   ">
 
           <div class="flex   h-1/6   text-2xl text-center tracking-wide font-semibold uppercase">
