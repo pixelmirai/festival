@@ -24,7 +24,7 @@ import GalleryMobile from "~/components/Section/GalleryMobile.vue";
 *
 
 *
-* hero - decide sizing and speed for images in mobile
+
 *
 * program -  add days and written adresses
 * program decid better bottom padding

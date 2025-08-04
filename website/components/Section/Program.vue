@@ -27,7 +27,7 @@ const noslegumsOpen = ref(false);
 </script>
 
 <template>
-  <div class="bg-white pb-32">
+  <div class="bg-white pb-8">
     <div class="max-w-screen-2xl mx-auto">
 
       <div>
@@ -38,7 +38,7 @@ const noslegumsOpen = ref(false);
 
       <div class="programm-list flex flex-col mx-auto max-w-screen-2xl">
 
-        <!-- 6. septembris -->
+
         <div class="program-item mx-4">
           <div>
             <p class="font-bold text-2xl text-gray-600 uppercase">

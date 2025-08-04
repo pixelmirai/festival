@@ -1,5 +1,20 @@
 <script setup lang="ts">
-const text = " Festivāls piedāvā bagātīgu programmu ar senās mūzikas koncertiem, koncertlekcijām un garīgās mūzikas notikumiem, pulcējot augsta līmeņa māksliniekus no Latvijas un ārzemēm. Tajā uzstāsies tādi atzīti kolektīvi kā Collegium Musicum Riga, Neymann Ensemble, Regence Sonore un Coloquio 6, kā arī ievērojami solisti, piemēram, Ēriks Bosgrāfs, Elīna Šimkus un Mauro Pinciaroli."
+import {useScrollHandler} from "~/composables/useScrollHandler";
+import {useInView} from "~/composables/useInView";
+
+
+
+const imageInView = ref(false)
+const image = ref(null);
+
+onMounted(()=>{
+  if(image.value){
+    useInView(image.value,()=>{
+      imageInView.value = true;
+      console.log("inv")
+    })
+  }
+})
 
 </script>
 
@@ -19,7 +34,9 @@ const text = " Festivāls piedāvā bagātīgu programmu ar senās mūzikas konc
           <div class="absolute w-full h-full rounded-t-full overflow-clip">
             <img src="assets/images/collegium-window-and-door-person.jpg" alt="" class="w-full h-full object-cover">
           </div>
-          <div class="absolute w-full h-full rounded-t-full overflow-clip hover:opacity-0 transition-opacity duration-1000">
+          <div ref="image"
+              :class="{'fade-in':imageInView}"
+              class="absolute w-full h-full rounded-t-full overflow-clip hover:opacity-1  transition-opacity duration-1000" >
             <img src="assets/images/collegium-door-person-gray.webp" alt="" class="w-full h-full object-cover">
           </div>
         </div>
@@ -31,5 +48,41 @@ const text = " Festivāls piedāvā bagātīgu programmu ar senās mūzikas konc
 </template>
 
 <style scoped>
+.scroll-fade-in{
+
+  animation: scroll-fade-in 3s linear forwards;
+}
+.scroll-fade-out{
+
+  animation: scroll-fade-out 3s linear forwards;
+}
+
+@keyframes scroll-fade-in {
+  from{
+    opacity: 0;
+  }to{
+  opacity: 1;
+     }
+}
+
+@keyframes scroll-fade-out {
+  from{
+    opacity: 1;
+  }to{
+     opacity: 0;
+   }
+}
+
+.fade-in{
+  animation: fade-in 3s linear forwards;
+}
+
+@keyframes fade-in {
+  from{
+    opacity: 1;
+  }to{
+     opacity: 0;
+   }
+}
 
 </style>

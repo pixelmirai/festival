@@ -99,7 +99,7 @@ function slideOpen(){
         </div>
 
         <div class="button-space flex justify-center items-center w-full h-[8rem] ">
-<!--          <ButtonProgramm class="" />-->
+
         </div>
       </div>
 
