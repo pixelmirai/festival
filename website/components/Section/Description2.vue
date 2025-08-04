@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import {useScrollHandler} from "~/composables/useScrollHandler";
 import {useInView} from "~/composables/useInView";
+import { useUtils } from "~/composables/useUtils";
 
-
+const utils = useUtils();
 
 const imageInView = ref(false)
 const image = ref(null);
+
+const hr = ref(0)
 
 onMounted(()=>{
   if(image.value){
@@ -14,6 +17,8 @@ onMounted(()=>{
       console.log("inv")
     })
   }
+
+
 })
 
 </script>
@@ -31,7 +36,9 @@ onMounted(()=>{
       </div>
       <div class="w-1/2 min-w-[360px] flex flex-grow justify-center items-center  ">
         <div class="image-thing relative h-[32rem] " style="aspect-ratio: 10/16">
-          <div class="absolute w-full h-full rounded-t-full overflow-clip">
+          <div
+              :class="{'image-frame':imageInView}"
+              class=" absolute w-full h-full rounded-t-full overflow-clip">
             <img src="assets/images/collegium-window-and-door-person.jpg" alt="" class="w-full h-full object-cover">
           </div>
           <div ref="image"
@@ -48,14 +55,21 @@ onMounted(()=>{
 </template>
 
 <style scoped>
-.scroll-fade-in{
+.image-frame{
 
-  animation: scroll-fade-in 3s linear forwards;
+  animation: frame-shadow 2s ease-out forwards;
 }
-.scroll-fade-out{
+@keyframes frame-shadow {
+  0%{
+    box-shadow: #52524c 20px 25px 15px 4px ;
+  }
 
-  animation: scroll-fade-out 3s linear forwards;
+  100%{
+    box-shadow: #52524c 8px 8px 2px 0px ;
+  }
+
 }
+
 
 @keyframes scroll-fade-in {
   from{
