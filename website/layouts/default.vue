@@ -9,10 +9,7 @@
 
     <slot></slot>
 
-  <footer>
 
-    <SectionContact/>
-  </footer>
 </div>
 
 

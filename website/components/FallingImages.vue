@@ -10,7 +10,6 @@ onMounted(()=>{
   if(images.value){
     useInView(images.value,()=>{
       imagesInView.value = true ;
-      console.log("in")
     },0)
   }
 

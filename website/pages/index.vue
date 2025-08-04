@@ -10,12 +10,43 @@ import GalleryMobile from "~/components/Section/GalleryMobile.vue";
 
 
 
+/*
+*  Assign functions to nav bar
+*  description images ar too small
+*  description insert a symbol in description frame
+*
+*
+* gallery2 - fix sizing issues in gallery2
+* gallery2 - use Inview not set timeout
+* gallery2 - ink images fade in
+*
+* description2 - figure out what is in description 2 image
+*
+* footer - fix google maps sizing issue
+*
+* hero - decide sizing and speed for images in mobile
+*
+* program -  add days and written adresses
+* program decid better bottom padding
+*
+*
+*partners find and insert correct logos
+*
+* ing colleg make window green
+*
+*
+*
+*
+* */
+
+
 const slider = ref(null)
 const hero = ref(null);
 const posts = ref([])
 
 
 const program = ref(null)
+const contact = ref(null);
 const partners = ref(null);
 const programClicked = ref(false)
 
@@ -24,6 +55,10 @@ function handleProgramButtonClick(){
   scrollToSectionWithOffset(partners.value,-50)
 }
 
+function handleContactButtonClick(){
+  programClicked.value = true;
+  scrollToSectionWithOffset(contact.value,-50)
+}
 
 
 function scrollToSectionWithOffset(element, offset = 0) {
@@ -55,11 +90,12 @@ onMounted(async () => {
             </button>
 
 
-          <a href="https://www.earlymusic.lv">
-            <div class="bg-black text-white px-2 py-1 font-extrabold rounded-sm   uppercase  ">
+            <button
+                @click="handleContactButtonClick"
+                class="bg-black text-white px-2 py-1 font-extrabold rounded-sm   uppercase  ">
               <span>kontakti</span>
-            </div>
-          </a>
+            </button>
+
 
           <a href="https://www.earlymusic.lv">
             <div class="bg-black text-white px-2 py-1 font-extrabold rounded-sm    uppercase  ">
@@ -117,6 +153,10 @@ onMounted(async () => {
         <SectionProgram/>
     </section>
 
+    <footer ref="contact" class="">
+
+      <SectionContact/>
+    </footer>
   </div>
 </template>
 <style>

@@ -16,6 +16,7 @@ const shadowSize = ref(0)
 const rightShadow = ref(0);
 const bottomShadow = ref(0);
 
+
 onMounted(()=>{
   if(section.value){
     useInView(section.value,()=>{
