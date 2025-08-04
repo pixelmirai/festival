@@ -20,7 +20,7 @@ onMounted(()=>{
 
 <template>
   <div ref="images"
-       class="relative w-[180px] md:w-[260px]  " style="aspect-ratio: 10/16;
+       class="relative w-[256px] md:w-[260px]  " style="aspect-ratio: 10/16;
         border: solid 	#B0927A 20px;
         background-color: #374231;
 ">
@@ -102,7 +102,7 @@ onMounted(()=>{
     transform: translateX(-100rem) translateY(-100rem) rotateZ(0deg);
   }
   to {
-    transform: translateX(-1rem) translateY(2rem) rotateZ(60deg);
+    transform: translateX(2rem) translateY(2rem) rotateZ(30deg);
   }
 }
 
@@ -111,7 +111,7 @@ onMounted(()=>{
     transform: translateX(-100rem) translateY(-100rem) rotateZ(0deg);
   }
   to {
-    transform: translateX(2rem) translateY(4rem) rotateZ(10deg);
+    transform: translateX(2rem) translateY(7rem) rotateZ(10deg);
   }
 }
 

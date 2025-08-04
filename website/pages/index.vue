@@ -11,7 +11,7 @@ import GalleryMobile from "~/components/Section/GalleryMobile.vue";
 
 
 /*
-*  Assign functions to nav bar
+
 *  description images ar too small
 *  description insert a symbol in description frame
 *
