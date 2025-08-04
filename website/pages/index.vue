@@ -12,11 +12,11 @@ import GalleryMobile from "~/components/Section/GalleryMobile.vue";
 
 /*
 
-*  description images ar too small
-*  description insert a symbol in description frame
+
+
 *
 *
-* gallery2 - fix sizing issues in gallery2
+
 * gallery2 - use Inview not set timeout
 * gallery2 - ink images fade in
 *

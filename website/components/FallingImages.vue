@@ -24,6 +24,9 @@ onMounted(()=>{
         border: solid 	#B0927A 20px;
         background-color: #374231;
 ">
+    <div class="absolute w-full h-full flex  justify-center items-center">
+      <img src="assets/images/keys.png" alt="" class="w-[8rem]">
+    </div>
 
     <img src="assets/images/elina-simkus.jpg" alt=""
          :class="imagesInView ? 'image-1' : 'opacity-0'"
