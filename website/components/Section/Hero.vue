@@ -173,11 +173,11 @@ function slideOpen(){
 @media (max-width: 767px) {
   .slider-movement{
     will-change: transform;
-    animation: sm 15s linear  forwards 1s;
+    animation: sm 12s linear  forwards 1s;
 
   }
   .slider-image-size{
-    width: 16rem;
+    width: 20rem;
     height: 100vh;
   }
 
