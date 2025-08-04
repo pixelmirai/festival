@@ -17,12 +17,12 @@ import GalleryMobile from "~/components/Section/GalleryMobile.vue";
 *
 *
 
-* gallery2 - use Inview not set timeout
-* gallery2 - ink images fade in
+
+
 *
 * description2 - figure out what is in description 2 image
 *
-* footer - fix google maps sizing issue
+
 *
 * hero - decide sizing and speed for images in mobile
 *
@@ -81,7 +81,7 @@ onMounted(async () => {
 
 <template>
   <div class="overflow-x-clip">
-    <header class="fixed  top-0 h-[3rem] w-full   bg-[rgba(9,9,9,0.3) z-[999] ">
+    <header class="fixed  top-0 h-[3rem] w-full px-4    bg-[rgba(9,9,9,0.3) z-[999] ">
       <div class="w-full h-full flex justify-center md:justify-end items-center">
         <div class="flex gap-1  ">
 

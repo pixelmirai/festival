@@ -10,12 +10,7 @@ onMounted(()=>{
     useInView(gallery.value,()=>{
       inView.value = true;
     })
-  } else {
-    setTimeout(()=>{
-      inView.value = true;
-    },500)
   }
-
 })
 </script>
 
@@ -26,19 +21,19 @@ onMounted(()=>{
 
     <div class="side-images absolute flex justify-between  items-center max-w-screen-2xl w-full h-full  ">
       <div class=" h-[85%] md:h-[55%] xl:h-full">
-        <img src="assets/images/maza-gilde-ink.png" alt="" class="h-full  object-contain ">
+        <img src="assets/images/maza-gilde-ink.png" alt="" class="fade-in h-full  object-contain ">
       </div>
       <div class="h-[85%] md:h-[55%] xl:h-full ">
-        <img src="assets/images/magdalenas-baznica.png" alt="" class="h-full  object-contain ">
+        <img src="assets/images/magdalenas-baznica.png" alt="" class="fade-in h-full  object-contain ">
       </div>
     </div>
 
     <div class="central-rectangle absolute w-[360px] h-[32rem] border-4 border-black  ">
       <div class="absolute w-full  h-full opacity-80">
-        <img src="assets/images/collegium-door-ink-writing.png" alt="" class="w-full h-full object-cover  ">
+        <img src="assets/images/collegium-door-ink-writing.png" alt="" class="fade-in  w-full h-full object-cover  ">
       </div>
       <div class="absolute w-1/2 h-full">
-        <img src="assets/images/violin-splash.png" alt="" class="w-full h-full object-cover  ">
+        <img src="assets/images/violin-splash.png" alt="" class="fade-in w-full h-full object-cover  ">
       </div>
     </div>
 
@@ -67,11 +62,23 @@ onMounted(()=>{
 }
 
 
-  .container{
+.container{
     transform: rotateZ(50deg) rotateX(40deg)  rotateY(-50deg) ;
   }
 
+.fade-in{
+  animation: fade-in 1s ease-in-out forwards;
+}
 
+@keyframes fade-in {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}
 
 
 

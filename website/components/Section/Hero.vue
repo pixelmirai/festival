@@ -170,10 +170,31 @@ function slideOpen(){
   animation: fbsu 500ms linear 1.5s forwards; /* 3s delay before it begins */
 }
 
-.slider-movement{
-  will-change: transform;
-  animation: sm 25s linear  forwards 1s;
+@media (max-width: 767px) {
+  .slider-movement{
+    will-change: transform;
+    animation: sm 15s linear  forwards 1s;
+
+  }
+  .slider-image-size{
+    width: 16rem;
+    height: 100vh;
+  }
+
 }
+@media (min-width: 768px) {
+  .slider-image-size{
+    width: 24rem;
+    height: 100vh;
+  }
+
+  .slider-movement{
+    will-change: transform;
+    animation: sm 25s linear  forwards 1s;
+  }
+}
+
+
 @keyframes sm {
   from{
     transform: translateX(0);
@@ -191,10 +212,6 @@ function slideOpen(){
   animation: sfo 8s linear forwards;
 }
 
-.slider-image-size{
-  width: 24rem;
-  height: 100vh;
-}
 
 .date-slide-in{
   opacity: 1;
