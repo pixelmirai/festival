@@ -36,13 +36,13 @@ const noslegumsOpen = ref(false);
         </h2>
       </div>
 
-      <div class="programm-list flex flex-col mx-auto max-w-screen-2xl">
+      <div class="programm-list mx-auto max-w-screen-2xl">
 
 
         <div class="program-item mx-4">
           <div>
             <p class="font-bold text-2xl text-gray-600 uppercase">
-              <span>6. septembris </span><span>18:00 </span>
+              <span>6. septembris </span><span>18:00 </span> <span class="font-extralight">Sestdiena</span>
             </p>
           </div>
 
@@ -63,8 +63,12 @@ const noslegumsOpen = ref(false);
           <div>
             <div class="flex justify-center py-4">
               <a :href="mazaGilde" target="_blank" rel="noopener noreferrer">
-                <p class="hover:underline">
+                <p class="hover:underline text-xl font-semibold">
                   RKTMC <span class="italic pr-2">Mazā Ģilde</span>
+
+                </p>
+                <p class="text-center py-2  ">
+                  <span class="pr-2 "> Amatu iela 5, Rīga</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                        class="bi bi-geo-alt-fill inline -translate-y-1" viewBox="0 0 16 16">
                     <path
@@ -74,7 +78,6 @@ const noslegumsOpen = ref(false);
               </a>
             </div>
 
-            <!-- description snippet -->
             <div class="description py-8 overflow-clip"
                  :class="atklasanaOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
@@ -104,11 +107,10 @@ const noslegumsOpen = ref(false);
 
         <div class="w-full my-16 border-t border-black mx-4"></div>
 
-        <!-- 13. septembris -->
         <div class="program-item mx-4">
           <div>
             <p class="font-bold text-2xl text-gray-600 uppercase">
-              <span>13. septembris </span><span>18:00 </span>
+              <span>13. septembris </span><span>18:00 </span> <span class="font-extralight">Sestdiena</span>
             </p>
           </div>
 
@@ -121,8 +123,11 @@ const noslegumsOpen = ref(false);
           <div>
             <div class="flex justify-center py-4">
               <a :href="collegiumZale" target="_blank" rel="noopener noreferrer">
-                <p class="hover:underline">
+                <p class="hover:underline text-xl font-semibold">
                   Koncertzāle: <span class="italic pr-2">Collegium Musicm Riga</span>
+                </p>
+                <p class="text-center py-2">
+                  <span class="pr-2">Vaļņu iela 9-3, Rīga</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                        class="bi bi-geo-alt-fill inline -translate-y-1" viewBox="0 0 16 16">
                     <path
@@ -175,11 +180,10 @@ const noslegumsOpen = ref(false);
 
         <div class="w-full my-16 border-t border-black mx-4"></div>
 
-        <!-- 16. septembris -->
         <div class="program-item mx-4">
           <div>
             <p class="font-bold text-2xl text-gray-600 uppercase">
-              <span>16. septembris </span><span>19:00 </span>
+              <span>16. septembris </span><span>19:00 </span> <span class="font-extralight">Otrdiena</span>
             </p>
           </div>
 
@@ -193,8 +197,11 @@ const noslegumsOpen = ref(false);
           <div>
             <div class="flex justify-center py-4">
               <a :href="collegiumZale" target="_blank" rel="noopener noreferrer">
-                <p class="hover:underline">
+                <p class="hover:underline text-xl font-semibold">
                   Koncertzāle: <span class="italic pr-2">Collegium Musicm Riga</span>
+                </p>
+                <p class="text-center py-2">
+                  <span class="pr-2">Vaļņu iela 9-3, Rīga</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                        class="bi bi-geo-alt-fill inline -translate-y-1" viewBox="0 0 16 16">
                     <path
@@ -204,7 +211,6 @@ const noslegumsOpen = ref(false);
               </a>
             </div>
 
-            <!-- description snippet -->
             <div class="description py-8 overflow-clip"
                  :class="inExiliumOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
@@ -253,11 +259,10 @@ const noslegumsOpen = ref(false);
 
         <div class="w-full my-16 border-t border-black mx-4"></div>
 
-        <!-- 20. septembris -->
         <div class="program-item mx-4">
           <div>
             <p class="font-bold text-2xl text-gray-600 uppercase">
-              <span>20. septembris </span><span>20:00 </span>
+              <span>20. septembris </span><span>20:00 </span> <span class="font-extralight">Sestdiena</span>
             </p>
           </div>
 
@@ -273,8 +278,11 @@ const noslegumsOpen = ref(false);
           <div>
             <div class="flex justify-center py-4">
               <a :href="magdalena" target="_blank" rel="noopener noreferrer">
-                <p class="hover:underline">
-                  Rīgas Svētās Marijas Magdalēnas baznīca
+                <p class="hover:underline text-xl font-semibold">
+                  <span class="italic pr-2">Rīgas Svētās Marijas Magdalēnas baznīca</span>
+                </p>
+                <p class="text-center py-2">
+                  <span class="pr-2">Klostera iela 2, Rīga</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                        class="bi bi-geo-alt-fill inline -translate-y-1" viewBox="0 0 16 16">
                     <path
@@ -327,11 +335,10 @@ const noslegumsOpen = ref(false);
 
         <div class="w-full my-16 border-t border-black mx-4"></div>
 
-        <!-- 22. septembris -->
         <div class="program-item mx-4">
           <div>
             <p class="font-bold text-2xl text-gray-600 uppercase">
-              <span>22. septembris </span><span>19:00 </span>
+              <span>22. septembris </span><span>19:00 </span> <span class="font-extralight">Pirmdiena</span>
             </p>
           </div>
 
@@ -349,8 +356,11 @@ const noslegumsOpen = ref(false);
           <div>
             <div class="flex justify-center py-4">
               <a :href="collegiumZale" target="_blank" rel="noopener noreferrer">
-                <p class="hover:underline">
+                <p class="hover:underline text-xl font-semibold">
                   Koncertzāle: <span class="italic pr-2">Collegium Musicm Riga</span>
+                </p>
+                <p class="text-center py-2">
+                  <span class="pr-2"> Vaļņu iela 9-3, Rīga</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                        class="bi bi-geo-alt-fill inline -translate-y-1" viewBox="0 0 16 16">
                     <path
@@ -407,7 +417,7 @@ const noslegumsOpen = ref(false);
         <div class="program-item mx-4">
           <div>
             <p class="font-bold text-2xl text-gray-600 uppercase">
-              <span>25. septembris </span><span>19:00 </span>
+              <span>25. septembris </span><span>19:00 </span> <span class="font-extralight">Ceturtdiena</span>
             </p>
           </div>
 
@@ -425,8 +435,11 @@ const noslegumsOpen = ref(false);
           <div>
             <div class="flex justify-center py-4">
               <a :href="collegiumZale" target="_blank" rel="noopener noreferrer">
-                <p class="hover:underline">
+                <p class="hover:underline text-xl font-semibold">
                   Koncertzāle: <span class="italic pr-2">Collegium Musicm Riga</span>
+                </p>
+                <p class="text-center py-2">
+                  <span class="pr-2">Vaļņu iela 9-3, Rīga</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                        class="bi bi-geo-alt-fill inline -translate-y-1" viewBox="0 0 16 16">
                     <path
@@ -484,7 +497,7 @@ const noslegumsOpen = ref(false);
         <div class="program-item mx-4">
           <div>
             <p class="font-bold text-2xl text-gray-600 uppercase">
-              <span>26. septembris </span><span>16:00 </span>
+              <span>26. septembris </span><span>16:00 </span> <span class="font-extralight">Piektdiena</span>
             </p>
           </div>
 
@@ -502,8 +515,11 @@ const noslegumsOpen = ref(false);
           <div>
             <div class="flex justify-center py-4">
               <a :href="bolderaja" target="_blank" rel="noopener noreferrer">
-                <p class="hover:underline">
-                  Bolderājas ev.lug. baznīca
+                <p class="hover:underline text-xl font-semibold">
+                  <span class="italic pr-2">Bolderājas ev.lug. baznīca</span>
+                </p>
+                <p class="text-center py-2">
+                  <span class="pr-2">Lielā iela 45, Rīga</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                        class="bi bi-geo-alt-fill inline -translate-y-1" viewBox="0 0 16 16">
                     <path
@@ -513,7 +529,6 @@ const noslegumsOpen = ref(false);
               </a>
             </div>
 
-            <!-- description snippet -->
             <div class="description py-8 overflow-clip"
                  :class="saulrietsOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
@@ -557,7 +572,7 @@ const noslegumsOpen = ref(false);
         <div class="program-item mx-4">
           <div>
             <p class="font-bold text-2xl text-gray-600 uppercase">
-              <span>3. Oktobris </span><span>19:00 </span>
+              <span>3. Oktobris </span><span>19:00 </span> <span class="font-extralight">Piektdiena</span>
             </p>
           </div>
 
@@ -573,8 +588,11 @@ const noslegumsOpen = ref(false);
           <div>
             <div class="flex justify-center py-4">
               <a :href="collegiumZale" target="_blank" rel="noopener noreferrer">
-                <p class="hover:underline">
+                <p class="hover:underline text-xl font-semibold">
                   Koncertzāle: <span class="italic pr-2">Collegium Musicm Riga</span>
+                </p>
+                <p class="text-center py-2">
+                  <span class="pr-2">Vaļņu iela 9-3, Rīga</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                        class="bi bi-geo-alt-fill inline -translate-y-1" viewBox="0 0 16 16">
                     <path
@@ -584,7 +602,6 @@ const noslegumsOpen = ref(false);
               </a>
             </div>
 
-            <!-- description snippet -->
             <div class="description py-8 overflow-clip"
                  :class="italijasValdzinajumsOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
@@ -629,11 +646,10 @@ const noslegumsOpen = ref(false);
 
         <div class="w-full my-16 border-t border-black mx-4"></div>
 
-        <!-- 5. oktobris -->
         <div class="program-item mx-4">
           <div>
             <p class="font-bold text-2xl text-gray-600 uppercase">
-              <span>5. Oktobris </span><span>16:00 </span>
+              <span>5. Oktobris </span><span>16:00 </span> <span class="font-extralight">Svētdiena</span>
             </p>
           </div>
 
@@ -646,18 +662,20 @@ const noslegumsOpen = ref(false);
           <div>
             <div class="flex justify-center py-4">
               <a :href="collegiumZale" target="_blank" rel="noopener noreferrer">
-                <p class="hover:underline">
+                <p class="hover:underline text-xl font-semibold">
                   Koncertzāle: <span class="italic pr-2">Collegium Musicm Riga</span>
+                </p>
+                <p class="text-center py-2">
+                  <span class="pr-2"> Vaļņu iela 9-3, Rīga</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                        class="bi bi-geo-alt-fill inline -translate-y-1" viewBox="0 0 16 16">
                     <path
-                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 1 0 1 0 0 6" />
+                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
                   </svg>
                 </p>
               </a>
             </div>
 
-            <!-- description snippet -->
             <div class="description py-8 overflow-clip"
                  :class="revalersOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
@@ -699,7 +717,7 @@ const noslegumsOpen = ref(false);
         <div class="program-item mx-4">
           <div>
             <p class="font-bold text-2xl text-gray-600 uppercase">
-              <span>11. Oktobris </span><span>16:00 </span>
+              <span>11. Oktobris </span><span>16:00 </span> <span class="font-extralight">Sestdiena</span>
             </p>
           </div>
 
@@ -713,12 +731,15 @@ const noslegumsOpen = ref(false);
           <div>
             <div class="flex justify-center py-4">
               <a :href="collegiumZale" target="_blank" rel="noopener noreferrer">
-                <p class="hover:underline">
+                <p class="hover:underline text-xl font-semibold">
                   Koncertzāle: <span class="italic pr-2">Collegium Musicm Riga</span>
+                </p>
+                <p class="text-center py-2">
+                  <span class="pr-2"> Vaļņu iela 9-3, Rīga</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                        class="bi bi-geo-alt-fill inline -translate-y-1" viewBox="0 0 16 16">
                     <path
-                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 1 0 1 0 0 6" />
+                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
                   </svg>
                 </p>
               </a>
@@ -742,7 +763,7 @@ const noslegumsOpen = ref(false);
 
                 Koncerts notiek ansambļa rezidences Latvijā ietvaros, S-Eeemerging programmā, kas apvieno Eiropas spilgtākos jaunos senās mūzikas māksliniekus.
 
-                Vairāk par ansambli: www.coloquio6.com
+                Vairāk par ansambli: <a href="https://coloquio6.com/">coloquio6.com</a>
               </article>
             </div>
 
@@ -769,6 +790,10 @@ const noslegumsOpen = ref(false);
         </div>
 
       </div>
+
+
+
+
     </div>
   </div>
 </template>

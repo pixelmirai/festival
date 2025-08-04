@@ -52,7 +52,7 @@ const programClicked = ref(false)
 
 function handleProgramButtonClick(){
   programClicked.value = true;
-  scrollToSectionWithOffset(partners.value,-50)
+  scrollToSectionWithOffset(program.value,-50)
 }
 
 function handleContactButtonClick(){
@@ -69,7 +69,6 @@ function scrollToSectionWithOffset(element, offset = 0) {
 
     window.scrollTo({
       top: scrollPosition,
-
     });
   }
 }
@@ -117,6 +116,7 @@ onMounted(async () => {
       <div class="absolute w-full h-full">
         <SectionHero class="absolute" ref="hero"/>
       </div>
+
       <div class="absolute flex items-end  w-full h-full">
         <div
             :class="{'opacity-0':programClicked}"
@@ -125,11 +125,7 @@ onMounted(async () => {
         </div>
       </div>
 
-
-
-
     </section>
-
 
     <section class=" w-full  ">
       <SectionDescription/>
@@ -137,7 +133,6 @@ onMounted(async () => {
 
   <section>
     <SectionDescription2/>
-
   </section>
 
 
@@ -145,12 +140,13 @@ onMounted(async () => {
         <SectionGallery2 class="hidden md:block"/>
         <GalleryMobile class="md:hidden block"/>
     </section>
-    <section ref="partners" class="  ">
-      <SectionPartners/>
-    </section>
+
 
     <section id="program" ref="program" class="  ">
         <SectionProgram/>
+    </section>
+    <section ref="partners" class="  ">
+      <SectionPartners/>
     </section>
 
     <footer ref="contact" class="">
