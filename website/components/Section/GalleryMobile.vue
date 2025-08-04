@@ -34,7 +34,9 @@ onMounted(()=>{
     </div>
 
 
-    <div class="second-layer gallery absolute flex justify-center items-center w-full h-full object-cover  ">
+    <div
+        ref="gallery"
+        class="second-layer gallery absolute flex justify-center items-center w-full h-full object-cover  ">
       <div class="perspective   relative  opacity-75  ">
         <div class=" container relative overflow-y-clip  w-[240px] grid grid-cols-2 gap-2   ">
           <div v-for="i in 8 "
