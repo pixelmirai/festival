@@ -9,7 +9,7 @@ onMounted(()=>{
   if (gallery.value){
     useInView(gallery.value,()=>{
       inView.value = true;
-    })
+    },0.3)
   }
 })
 </script>

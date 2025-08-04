@@ -24,12 +24,6 @@ onMounted(()=>{
       inView.value = true;
     },0.2)
   }
-  if(images.value){
-    useInView(images.value,()=>{
-      imagesInView.value = true;
-      console.log("in")
-    },0)
-  }
 
 
 

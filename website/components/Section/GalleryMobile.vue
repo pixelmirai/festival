@@ -9,11 +9,7 @@ onMounted(()=>{
   if (gallery.value){
     useInView(gallery.value,()=>{
       inView.value = true;
-    })
-  } else {
-    setTimeout(()=>{
-      inView.value = true;
-    },500)
+    },0.2)
   }
 
 })

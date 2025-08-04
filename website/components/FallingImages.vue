@@ -10,7 +10,7 @@ onMounted(()=>{
   if(images.value){
     useInView(images.value,()=>{
       imagesInView.value = true ;
-    },0)
+    },0.5)
   }
 
 

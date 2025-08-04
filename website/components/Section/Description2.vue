@@ -14,7 +14,7 @@ onMounted(()=>{
   if(image.value){
     useInView(image.value,()=>{
       imageInView.value = true;
-      console.log("inv")
+
     })
   }
 
