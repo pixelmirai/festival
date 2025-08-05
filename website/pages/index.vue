@@ -1,14 +1,9 @@
 <script setup lang="js">
 import axios from "axios"
+import {useUtils} from "~/composables/useUtils.js";
 
 
-
-import { useWindowSize } from "@/composables/useWindowSize"
-import { useInView } from "@/composables/useInView"
-import { useScrollHandler } from "@/composables/useScrollHandler"
-import GalleryMobile from "~/components/Section/GalleryMobile.vue";
-
-
+const utils = useUtils();
 
 /*
 
@@ -48,11 +43,14 @@ const slider = ref(null)
 const hero = ref(null);
 const posts = ref([])
 
-
+const gallery = ref(null);
 const program = ref(null)
 const contact = ref(null);
 const partners = ref(null);
 const programClicked = ref(false)
+
+
+
 
 function handleProgramButtonClick(){
   programClicked.value = true;
@@ -75,10 +73,53 @@ function scrollToSectionWithOffset(element, offset = 0) {
       top: scrollPosition,
     });
   }
+
 }
+const activeSections = ref({
+  program: {
+    element: program.value,
+    vhr: 0,
+    active: false,
+  },
+  contact: {
+    element: contact.value,
+    vhr: 0,
+    active: false,
+  },
+});
+
+
+
 
 onMounted(async () => {
+  activeSections.value = {
 
+    program: {
+      element: program.value,
+      vhr: 0,
+      active: false,
+    },
+    contact: {
+      element: contact.value,
+      vhr: 0,
+      active: false,
+    },
+  }
+  console.log(activeSections.value.program.active)
+
+
+  window.addEventListener('scroll',() => {
+
+    const centerLine = window.innerHeight / 2
+
+    activeSections.value.program.active =
+        utils.isCentralElement(activeSections.value.program.element, 0.5)
+    activeSections.value.contact.active =
+        utils.isCentralElement(activeSections.value.contact.element, 0.5) ||
+        utils.isCentralElement(partners.value, 0.5) ;
+
+
+  })
 
 })
 </script>
@@ -89,12 +130,15 @@ onMounted(async () => {
       <div class="w-full h-full flex justify-center md:justify-end items-center">
         <div class="flex gap-1  ">
 
-            <button @click="handleProgramButtonClick" class="bg-black text-white px-2 py-1 font-extrabold rounded-sm    uppercase  ">
+            <button
+                :class="activeSections.program.active ? 'bg-white text-black':'bg-black text-white'"
+                @click="handleProgramButtonClick" class=" px-2 py-1 font-extrabold rounded-sm    uppercase  ">
               <span>programma</span>
             </button>
 
 
             <button
+                :class="activeSections.contact.active ? 'bg-white text-black':'bg-black text-white'"
                 @click="handleContactButtonClick"
                 class="bg-black text-white px-2 py-1 font-extrabold rounded-sm   uppercase  ">
               <span>kontakti</span>
@@ -144,7 +188,7 @@ onMounted(async () => {
   </section>
 
 
-    <section>
+    <section ref="gallery">
         <SectionGallery2 class="hidden md:block"/>
         <GalleryMobile class="md:hidden block"/>
     </section>
@@ -157,7 +201,7 @@ onMounted(async () => {
       <SectionPartners/>
     </section>
 
-    <footer ref="contact" class="">
+    <footer ref="contact" class="border-4  border-white ">
 
       <SectionContact/>
     </footer>

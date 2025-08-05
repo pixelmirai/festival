@@ -54,6 +54,12 @@ export function useUtils(){
         return Math.max(0, Math.min(1, visibleHeightFraction));
     }
 
+    function isCentralElement(element, centerLine = 0.5){
+
+        const center = window.innerHeight * centerLine;
+        return element.getBoundingClientRect().top < center
+        && element.getBoundingClientRect().bottom > center
+    }
 
     function indexOfLargest(arr) {
         if (arr.length === 0) return -1; // Return -1 if the array is empty
@@ -74,5 +80,6 @@ export function useUtils(){
         getVisibleHeight,
         getVisibleHeightRatio,
         indexOfLargest,
+        isCentralElement
     }
 }
