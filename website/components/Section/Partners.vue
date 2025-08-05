@@ -13,29 +13,59 @@
                   <img src="assets/images/logos/riga-logo-black.webp" alt="" class="h-full object-contain">
                 </div>
               <div class="logo" >
-                <img src="assets/images/logos/riga-logo-black.webp" alt="" class="h-full object-contain">
+                <img src="assets/images/vkkf.jpg" alt="" class="h-full object-contain">
               </div>
+              <div class="logo" >
+                <img src="assets/images/eeemergin.png" alt="" class="h-full object-contain">
+              </div>
+              <div class="logo" >
+                <img src="assets/images/balta-nakts.jpg" alt="" class="h-full object-contain">
+              </div>
+              <div class="logo" >
+                <img src="assets/images/maza-gilde-logo.png" alt="" class="h-full object-contain">
+              </div>
+              <div class="logo" >
+                <img src="assets/images/rsmc_logo-1.webp" alt="" class="h-full object-contain">
+              </div>
+
               <div class="logo" >
                 <img src="assets/images/logos/riga-logo-black.webp" alt="" class="h-full object-contain">
               </div>
               <div class="logo" >
-                <img src="assets/images/logos/riga-logo-black.webp" alt="" class="h-full object-contain">
+                <img src="assets/images/vkkf.jpg" alt="" class="h-full object-contain">
               </div>
+              <div class="logo" >
+                <img src="assets/images/eeemergin.png" alt="" class="h-full object-contain">
+              </div>
+              <div class="logo" >
+                <img src="assets/images/balta-nakts.jpg" alt="" class="h-full object-contain">
+              </div>
+              <div class="logo" >
+                <img src="assets/images/maza-gilde-logo.png" alt="" class="h-full object-contain">
+              </div>
+              <div class="logo" >
+                <img src="assets/images/rsmc_logo-1.webp" alt="" class="h-full object-contain">
+              </div>
+
               <div class="logo" >
                 <img src="assets/images/logos/riga-logo-black.webp" alt="" class="h-full object-contain">
               </div>
               <div class="logo" >
-                <img src="assets/images/logos/riga-logo-black.webp" alt="" class="h-full object-contain">
+                <img src="assets/images/vkkf.jpg" alt="" class="h-full object-contain">
               </div>
               <div class="logo" >
-                <img src="assets/images/logos/riga-logo-black.webp" alt="" class="h-full object-contain">
+                <img src="assets/images/eeemergin.png" alt="" class="h-full object-contain">
               </div>
               <div class="logo" >
-                <img src="assets/images/logos/riga-logo-black.webp" alt="" class="h-full object-contain">
+                <img src="assets/images/balta-nakts.jpg" alt="" class="h-full object-contain">
               </div>
               <div class="logo" >
-                <img src="assets/images/logos/riga-logo-black.webp" alt="" class="h-full object-contain">
+                <img src="assets/images/maza-gilde-logo.png" alt="" class="h-full object-contain">
               </div>
+              <div class="logo" >
+                <img src="assets/images/rsmc_logo-1.webp" alt="" class="h-full object-contain">
+              </div>
+
 
 
               </div>

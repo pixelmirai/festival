@@ -40,6 +40,10 @@ import GalleryMobile from "~/components/Section/GalleryMobile.vue";
 * */
 
 
+
+
+const timg = ref("")
+
 const slider = ref(null)
 const hero = ref(null);
 const posts = ref([])
@@ -74,6 +78,7 @@ function scrollToSectionWithOffset(element, offset = 0) {
 }
 
 onMounted(async () => {
+
 
 })
 </script>
@@ -126,6 +131,9 @@ onMounted(async () => {
       </div>
 
     </section>
+    <div>
+      <img :src="timg" alt="">
+    </div>
 
     <section class=" w-full  ">
       <SectionDescription/>
@@ -170,4 +178,6 @@ onMounted(async () => {
      opacity: 0;
    }
 }
+
+
 </style>
