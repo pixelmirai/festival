@@ -15,7 +15,7 @@ onMounted(()=>{
     useInView(image.value,()=>{
       imageInView.value = true;
 
-    })
+    },0.8)
   }
 
 
@@ -57,11 +57,14 @@ onMounted(()=>{
 <style scoped>
 .image-frame{
 
-  animation: frame-shadow 2s ease-out forwards;
+  animation: frame-shadow 5s ease-out forwards;
 }
 @keyframes frame-shadow {
   0%{
-    box-shadow: #52524c 20px 25px 15px 4px ;
+    box-shadow: #52524c 5px 5px 50px 30px ;
+  }
+  20%{
+    box-shadow: #52524c 20px 25px 15px 20px ;
   }
 
   100%{
@@ -88,7 +91,7 @@ onMounted(()=>{
 }
 
 .fade-in{
-  animation: fade-in 3s linear forwards;
+  animation: fade-in 5s linear forwards;
 }
 
 @keyframes fade-in {
