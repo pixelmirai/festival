@@ -140,7 +140,7 @@ onMounted(async () => {
             <button
                 :class="activeSections.contact.active ? 'bg-white text-black':'bg-black text-white'"
                 @click="handleContactButtonClick"
-                class="bg-black text-white px-2 py-1 font-extrabold rounded-sm   uppercase  ">
+                class=" px-2 py-1 font-extrabold rounded-sm   uppercase  ">
               <span>kontakti</span>
             </button>
 
