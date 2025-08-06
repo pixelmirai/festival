@@ -201,7 +201,7 @@ onMounted(async () => {
       <SectionPartners/>
     </section>
 
-    <footer ref="contact" class="border-4  border-white ">
+    <footer ref="contact" class=" ">
 
       <SectionContact/>
     </footer>
