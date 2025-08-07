@@ -43,12 +43,64 @@ onMounted(()=>{
   <div ref="gallery" class="second-layer gallery absolute flex justify-center items-center w-full h-full object-cover  ">
     <div class="perspective   relative  opacity-75  ">
       <div  class="  container relative overflow-y-clip  w-[360px] grid grid-cols-2 gap-2   ">
-        <div v-for="i in 8 "
+
+
+        <div
              :class="{'translate-y-[44rem]' : !inView}"
              style="transition-duration: 5s"
              class=" w-full flex justify-center items-center aspect-square  ease-in-out ">
-          <img src="assets/images/orchestra-church.webp" alt="" class="image">
+          <img src="assets/images/gallery/bosgraf-collegium-stage.jpg" alt="" class="image">
         </div>
+
+        <div
+            :class="{'translate-y-[44rem]' : !inView}"
+            style="transition-duration: 5s"
+            class=" w-full flex justify-center items-center aspect-square  ease-in-out ">
+          <img src="assets/images/gallery/coloquio6-2.png" alt="" class="image">
+        </div>
+
+        <div
+            :class="{'translate-y-[44rem]' : !inView}"
+            style="transition-duration: 5s"
+            class=" w-full flex justify-center items-center aspect-square  ease-in-out ">
+          <img src="assets/images/gallery/kupcs-martinsone.jpg" alt="" class="image">
+        </div>
+        <div
+            :class="{'translate-y-[44rem]' : !inView}"
+            style="transition-duration: 5s"
+            class=" w-full flex justify-center items-center aspect-square  ease-in-out ">
+          <img src="assets/images/gallery/revalers.png" alt="" class="image">
+        </div>
+
+
+
+
+        <div
+            :class="{'translate-y-[44rem]' : !inView}"
+            style="transition-duration: 5s"
+            class=" w-full flex justify-center items-center aspect-square  ease-in-out ">
+          <img src="assets/images/gallery/regence-sonore-3.png" alt="" class="image">
+        </div>
+
+
+        <div
+            :class="{'translate-y-[44rem]' : !inView}"
+            style="transition-duration: 5s"
+            class=" w-full flex justify-center items-center aspect-square  ease-in-out ">
+          <img src="assets/images/gallery/neymann-ensemble-3.jpg" alt="" class="image">
+        </div>
+
+        <div
+            :class="{'translate-y-[44rem]' : !inView}"
+            style="transition-duration: 5s"
+            class=" col-span-2 w-full flex justify-center items-center   ease-in-out ">
+          <img src="assets/images/bosgraf-long.png" alt="" class="image">
+        </div>
+
+
+
+
+
       </div>
     </div>
   </div>

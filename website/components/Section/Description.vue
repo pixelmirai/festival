@@ -22,7 +22,7 @@ onMounted(()=>{
     useInView(section.value,()=>{
 
       inView.value = true;
-    },0.2)
+    },0)
   }
 
 
@@ -63,7 +63,7 @@ function calculateBottomShadow(vhr){
                   class="flex flex-col pb-16 pr-16 overflow-clip  gap-12  ">
                 <p
                     :class="{'translate-y-[100%] opacity-0' : !inView}"
-                    class="  text-3xl md:text-3xl transition-all duration-1000 lg:text-5xl font-extralight text-center ">
+                    class="  text-3xl md:text-3xl transition-all duration-500 lg:text-5xl font-extralight text-center ">
                   Rīgas Vēsturiskās mūzikas un dejas festivāls 2025 ir starptautisks kultūras notikums, kas notiks no 6. septembra līdz 11. oktobrim dažādās Rīgas koncertvietās.
 
                 </p>
