@@ -28,7 +28,7 @@ const noslegumsOpen = ref(false);
 
 <template>
   <div class="bg-white pb-8">
-    <div class="max-w-screen-2xl mx-auto">
+    <div class="max-w-screen-xl mx-auto">
 
       <div>
         <h2 class="text-center py-32 uppercase text-5xl md:text-6xl lg:text-7xl font-serif">
@@ -82,11 +82,13 @@ const noslegumsOpen = ref(false);
                  :class="atklasanaOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
                 <div class="w-full">
-                  <img src="assets/images/regence-sonore.jpg" alt=""
+                  <img src="assets/images/program/opening-bosgraf-collegium.jpg" alt=""
                        class="w-full h-full object-cover" />
                 </div>
               </div>
-              <article></article>
+              <article>
+                Rīgas Vēsturiskās mūzikas un dejas festivāls ir kā mājas, kurā gan skatītāji un klausītāji, gan paši mūziķi un mākslinieki ar īpašu prieku atgriežas, lai atgūtu harmoniju, smeltos enerģiju, kaut uz brīdi iejustos augsti izglītoto un smalkjūtīgo baroka laika galminieku ādā, un, kas īpaši būtiski – pārsteigumā secinātu, cik patiesībā daudz mēs vēl varam atklāt. Visi festivāla koncerti tiek atskaņoti tikai un vienīgi ar vēsturisko mūzikas instrumentu oriģināliem vai to kopijām, dziedātāju balsis pārvalda baroka laika ornamentus un retoriskos smalkumus, pilnībā aizslaukot māņu mītus par seno mūziku kā kaut ko vecmodīgu. Tieši pretēji – pateicoties Rīgas Vēsturiskās mūzikas un dejas festivāla norisēm, Rīga un Latvija ir kļuvusi par vienu no nozīmīgākajiem senās mūzikas centriem Eiropā.Festivāls piedāvā klausītājiem ceļojumu laikā, iepazīstinot ar Eiropas 17.–18. gadsimta mūziku un vēsturiskajiem instrumentiem. Programmā iekļauti gan klasiskās baroka mūzikas šedevri, gan arī mazāk zināmi, bet muzikāli vērtīgi darbi.
+              </article>
             </div>
 
             <div class="buttons flex">
@@ -215,7 +217,7 @@ const noslegumsOpen = ref(false);
                  :class="inExiliumOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
                 <div class="w-full">
-                  <img src="assets/images/regence-sonore.jpg" alt=""
+                  <img src="assets/images/program/in-exilium-1.jpg" alt=""
                        class="w-full h-full object-cover" />
                 </div>
               </div>
@@ -297,7 +299,7 @@ const noslegumsOpen = ref(false);
                  :class="neymannOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
                 <div class="w-full">
-                  <img src="assets/images/regence-sonore.jpg" alt=""
+                  <img src="assets/images/program/neymann-ensemble.jpg" alt=""
                        class="w-full h-full object-cover" />
                 </div>
               </div>
@@ -375,7 +377,7 @@ const noslegumsOpen = ref(false);
                  :class="stastiMilestibaOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
                 <div class="w-full">
-                  <img src="assets/images/regence-sonore.jpg" alt=""
+                  <img src="assets/images/program/stasti-man.jpg" alt=""
                        class="w-full h-full object-cover" />
                 </div>
               </div>
@@ -454,7 +456,7 @@ const noslegumsOpen = ref(false);
                  :class="mocartsOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
                 <div class="w-full">
-                  <img src="assets/images/regence-sonore.jpg" alt=""
+                  <img src="assets/images/program/mocarts-sievietes.jpg" alt=""
                        class="w-full h-full object-cover" />
                 </div>
               </div>
@@ -533,8 +535,8 @@ const noslegumsOpen = ref(false);
                  :class="saulrietsOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
                 <div class="w-full">
-                  <img src="assets/images/regence-sonore.jpg" alt=""
-                       class="w-full h-full object-cover" />
+                  <img src="" alt=""
+                       class="w-full h-full object-cover hidden " />
                 </div>
               </div>
               <article>
@@ -606,7 +608,7 @@ const noslegumsOpen = ref(false);
                  :class="italijasValdzinajumsOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
                 <div class="w-full">
-                  <img src="assets/images/regence-sonore.jpg" alt=""
+                  <img src="assets/images/program/italijas-valdzinajums.jpg" alt=""
                        class="w-full h-full object-cover" />
                 </div>
               </div>
@@ -680,7 +682,7 @@ const noslegumsOpen = ref(false);
                  :class="revalersOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
                 <div class="w-full">
-                  <img src="assets/images/regence-sonore.jpg" alt=""
+                  <img src="assets/images/program/the-revalers.jpg" alt=""
                        class="w-full h-full object-cover" />
                 </div>
               </div>
@@ -750,7 +752,7 @@ const noslegumsOpen = ref(false);
                  :class="noslegumsOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
                 <div class="w-full">
-                  <img src="assets/images/regence-sonore.jpg" alt=""
+                  <img src="assets/images/program/noslegums.jpg" alt=""
                        class="w-full h-full object-cover" />
                 </div>
               </div>

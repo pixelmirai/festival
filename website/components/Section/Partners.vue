@@ -1,4 +1,9 @@
-<script setup lang="ts">
+<script setup lang="js">
+const logos = ref([""])
+
+onMounted(()=>{
+
+})
 
 </script>
 
@@ -8,67 +13,51 @@
 
         <div class="w-full ">
           <div class=" max-w-screen-4xl overflow-x-hidden mx-auto  ">
-            <div class="slider-movement flex items-center  min-w-max h-full ">
+            <div class="slider-movement flex   min-w-max h-full ">
+
+              <div v-for="i in 4" class="flex gap-2  py-8 sm:py-0  items-center ">
                 <div class="logo" >
-                  <img src="assets/images/logos/riga-logo-black.webp" alt="" class="h-full object-contain">
+                  <img src="assets/images/partners/partners-riga.jpg" alt="" class="h-full object-contain">
                 </div>
-              <div class="logo" >
-                <img src="assets/images/vkkf.jpg" alt="" class="h-full object-contain">
-              </div>
-              <div class="logo" >
-                <img src="assets/images/eeemergin.png" alt="" class="h-full object-contain">
-              </div>
-              <div class="logo" >
-                <img src="assets/images/balta-nakts.jpg" alt="" class="h-full object-contain">
-              </div>
-              <div class="logo" >
-                <img src="assets/images/maza-gilde-logo.png" alt="" class="h-full object-contain">
-              </div>
-              <div class="logo" >
-                <img src="assets/images/rsmc_logo-1.webp" alt="" class="h-full object-contain">
-              </div>
+                <div class="logo" >
+                  <img src="assets/images/partners/partners-maza-gilde.jpg" alt="" class="h-full object-contain">
+                </div>
+                <div class="logo" >
+                  <img src="assets/images/partners/partners-kulturas-ministrija.jpg" alt="" class="h-full object-contain">
+                </div>
+                <div class="logo" >
+                  <img src="assets/images/partners/partners-vkkf.jpg" alt="" class="h-full object-contain">
+                </div>
+                <div class="logo" >
+                  <img src="assets/images/partners/partners-balta-nakts.jpg" alt="" class="h-full object-contain">
+                </div>
+                <div class="logo" >
+                  <img src="assets/images/partners/partners-rembates-sokolade.jpg" alt="" class="h-full object-contain">
+                </div>
+                <div class="logo" >
+                  <img src="assets/images/partners/partners-bilesu-paradize.jpg" alt="" class="h-full object-contain">
+                </div>
+                <div class="logo" >
+                  <img src="assets/images/partners/partners-se.jpg" alt="" class="h-full object-contain">
+                </div>
+                <div class="logo" >
+                  <img src="assets/images/partners/partners-eu.png" alt="" class="h-full object-contain">
+                </div>
+                <div class="logo" >
+                  <img src="assets/images/partners/partners-collegium.jpg" alt="" class="h-full object-contain">
+                </div>
+                <div class="logo" >
+                  <img src="assets/images/partners/partners-rsmc.jpg" alt="" class="h-full object-contain">
+                </div>
 
-              <div class="logo" >
-                <img src="assets/images/logos/riga-logo-black.webp" alt="" class="h-full object-contain">
-              </div>
-              <div class="logo" >
-                <img src="assets/images/vkkf.jpg" alt="" class="h-full object-contain">
-              </div>
-              <div class="logo" >
-                <img src="assets/images/eeemergin.png" alt="" class="h-full object-contain">
-              </div>
-              <div class="logo" >
-                <img src="assets/images/balta-nakts.jpg" alt="" class="h-full object-contain">
-              </div>
-              <div class="logo" >
-                <img src="assets/images/maza-gilde-logo.png" alt="" class="h-full object-contain">
-              </div>
-              <div class="logo" >
-                <img src="assets/images/rsmc_logo-1.webp" alt="" class="h-full object-contain">
-              </div>
-
-              <div class="logo" >
-                <img src="assets/images/logos/riga-logo-black.webp" alt="" class="h-full object-contain">
-              </div>
-              <div class="logo" >
-                <img src="assets/images/vkkf.jpg" alt="" class="h-full object-contain">
-              </div>
-              <div class="logo" >
-                <img src="assets/images/eeemergin.png" alt="" class="h-full object-contain">
-              </div>
-              <div class="logo" >
-                <img src="assets/images/balta-nakts.jpg" alt="" class="h-full object-contain">
-              </div>
-              <div class="logo" >
-                <img src="assets/images/maza-gilde-logo.png" alt="" class="h-full object-contain">
-              </div>
-              <div class="logo" >
-                <img src="assets/images/rsmc_logo-1.webp" alt="" class="h-full object-contain">
               </div>
 
 
 
-              </div>
+
+
+
+            </div>
 
 
           </div>
@@ -90,7 +79,9 @@
   }
   .logo{
     height: 5rem;
-
+    aspect-ratio: 1;
+    padding: 0.2rem;
+    border: solid white;
   }
 
 }
@@ -98,10 +89,14 @@
 
   .slider-movement{
 
-    animation: sm 200s linear infinite 0s;
+    animation: sm 150s linear infinite 0s;
   }
   .logo{
-    height: 10rem;
+    height: 8rem;
+    aspect-ratio: 1;
+    padding: 0.8rem;
+    border: solid white;
+
 
   }
 

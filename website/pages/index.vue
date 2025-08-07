@@ -131,8 +131,8 @@ onMounted(async () => {
         <div class="flex gap-1  ">
 
             <button
-                :class="activeSections.program.active ? 'bg-white text-black':'bg-black text-white'"
-                @click="handleProgramButtonClick" class=" px-2 py-1 font-extrabold rounded-sm    uppercase  ">
+                :class="activeSections.program.active ? 'bg-white text-black border-2 border-black ':'bg-black text-white'"
+                @click="handleProgramButtonClick" class="  hover:bg-white  border-2 border-black hover:text-black  px-2 py-1 font-extrabold rounded-sm    uppercase  ">
               <span>programma</span>
             </button>
 
@@ -140,13 +140,13 @@ onMounted(async () => {
             <button
                 :class="activeSections.contact.active ? 'bg-white text-black':'bg-black text-white'"
                 @click="handleContactButtonClick"
-                class=" px-2 py-1 font-extrabold rounded-sm   uppercase  ">
+                class=" px-2 py-1 font-extrabold rounded-sm  hover:bg-white  border-2  border-black hover:text-black   uppercase  ">
               <span>kontakti</span>
             </button>
 
 
           <a href="https://www.earlymusic.lv">
-            <div class="bg-black text-white px-2 py-1 font-extrabold rounded-sm    uppercase  ">
+            <div class="bg-black text-white px-2 py-1 font-extrabold rounded-sm  border-2  border-black   uppercase  ">
               <span>earlymusic</span>
             </div>
           </a>
@@ -190,7 +190,7 @@ onMounted(async () => {
 
     <section ref="gallery">
         <SectionGallery2 class="hidden md:block"/>
-        <GalleryMobile class="md:hidden block"/>
+        <SectionGalleryMobile class="md:hidden block"/>
     </section>
 
 
