@@ -39,12 +39,12 @@ onMounted(()=>{
           <div
               :class="{'image-frame':imageInView}"
               class=" absolute w-full h-full rounded-t-full overflow-clip">
-            <img src="assets/images/collegium-window-and-door-person.jpg" alt="" class="w-full h-full object-cover">
+            <img src="assets/images/collegium-door-straight.jpg" alt="" class="w-full h-full object-cover">
           </div>
           <div ref="image"
               :class="{'fade-in':imageInView}"
               class="absolute w-full h-full rounded-t-full overflow-clip hover:opacity-1  transition-opacity duration-1000" >
-            <img src="assets/images/collegium-door-person-gray.webp" alt="" class="w-full h-full object-cover">
+            <img src="assets/images/collegium-door.jpg" alt="" class="w-full h-full object-cover">
           </div>
         </div>
       </div>

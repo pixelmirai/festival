@@ -10,7 +10,7 @@ onMounted(()=>{
   if(images.value){
     useInView(images.value,()=>{
       imagesInView.value = true ;
-    },0.5)
+    },0.2)
   }
 
 
@@ -28,19 +28,19 @@ onMounted(()=>{
       <img src="assets/images/keys.png" alt="" class="w-[8rem]">
     </div>
 
-    <img src="assets/images/elina-simkus.jpg" alt=""
+    <img src="assets/images/description/bosgraf.jpg" alt=""
          :class="imagesInView ? 'image-1' : 'opacity-0'"
          class="absolute w-full h-full object-cover ">
-    <img src="assets/images/monta-martinsone.jpg" alt=""
+    <img src="assets/images/description/jolanta-barinska.jpg" alt=""
          :class="imagesInView ? 'image-2' : 'opacity-0'"
          class="absolute w-full h-full object-cover  ">
-    <img src="assets/images/anete-viluma.jpg" alt=""
+    <img src="assets/images/description/monta-martinsone-2.jpg" alt=""
          :class="imagesInView ? 'image-3' : 'opacity-0'"
          class="absolute w-full h-full object-cover i">
     <img src="assets/images/anete-viluma.jpg" alt=""
          :class="imagesInView ? 'image-4' : 'opacity-0'"
          class="absolute w-full h-full object-cover i">
-    <img src="assets/images/anete-viluma.jpg" alt=""
+    <img src="assets/images/description/elina-simkus-2.jpg" alt=""
          :class="imagesInView ? 'image-5' : 'opacity-0'"
          class="absolute w-full h-full object-cover i z-20">
   </div>
@@ -48,7 +48,7 @@ onMounted(()=>{
 
 <style scoped>
 .image-1 {
-  transform: translateX(-100rem) translateY(-100rem) rotateZ(0deg);
+  transform: translateX(-60rem) translateY(-60rem) rotateZ(0deg);
   animation: insert-image-1 1s linear 0s forwards;
 }
 
