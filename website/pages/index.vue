@@ -125,7 +125,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="overflow-x-clip">
+  <div class="overflow-x-clip w-screen">
     <header class="fixed  top-0 h-[3rem] w-full px-4    bg-[rgba(9,9,9,0.3) z-[999] ">
       <div class="w-full h-full flex justify-center md:justify-end items-center">
         <div class="flex gap-1  ">
