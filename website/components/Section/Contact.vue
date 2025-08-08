@@ -1,8 +1,19 @@
 <script setup lang="js">
+const w = ref(0)
+
+onMounted(()=>{
+  w.value = window.innerWidth;
+  window.addEventListener('resize',()=>{
+    w.value =  window.innerWidth
+  })
+})
 </script>
 
 <template>
   <div class="bg-black">
+    <div class="bg-white">
+      inner w : {{w}}
+    </div>
     <ContactSM class="contact-sm" />
     <ContactMD class="contact-md" />
     <ContactLG class="contact-lg" />
