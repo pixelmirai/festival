@@ -1,6 +1,24 @@
 <script setup lang="js">
 const logos = ref([""])
 
+const IMG_URL = "https://rvmdfcontent.wordpress.com/wp-content/uploads/2025/08/";
+
+const partners = {
+  baltaNakts: IMG_URL + 'partners-balta-nakts.webp',
+  bilesuParadize: IMG_URL + 'partners-bilesu-paradize.webp',
+  bolderajasElb: IMG_URL + 'partners-bolderajas-elb.webp',
+  collegium: IMG_URL + 'partners-collegium.webp',
+  eu: IMG_URL + 'partners-eu.webp',
+  kulturasMinistrija: IMG_URL + 'partners-kulturas-ministrija.webp',
+  mazaGilde: IMG_URL + 'partners-maza-gilde.webp',
+  rembatesSokola: IMG_URL + 'partners-rembates-sokola.webp',
+  riga: IMG_URL + 'partners-riga.webp',
+  rsmc: IMG_URL + 'partners-rsmc.webp',
+  se: IMG_URL + 'partners-se.webp',
+  vkkf: IMG_URL + 'partners-vkkf.webp',
+};
+
+
 onMounted(()=>{
 
 })
@@ -16,39 +34,40 @@ onMounted(()=>{
             <div class="slider-movement flex   min-w-max h-full ">
 
               <div v-for="i in 4" class="flex gap-2  py-8 sm:py-0  items-center ">
-                <div class="logo" >
-                  <img src="assets/images/partners/partners-riga.jpg" alt="" class="h-full object-contain">
+                <div class="logo">
+                  <img :src="partners.riga" loading="lazy" alt="Rīgas dome" class="h-full object-contain">
                 </div>
-                <div class="logo" >
-                  <img src="assets/images/partners/partners-maza-gilde.jpg" alt="" class="h-full object-contain">
+                <div class="logo">
+                  <img :src="partners.mazaGilde" loading="lazy" alt="Mazā Ģilde" class="h-full object-contain">
                 </div>
-                <div class="logo" >
-                  <img src="assets/images/partners/partners-kulturas-ministrija.jpg" alt="" class="h-full object-contain">
+                <div class="logo">
+                  <img :src="partners.kulturasMinistrija" loading="lazy" alt="Kultūras ministrija" class="h-full object-contain">
                 </div>
-                <div class="logo" >
-                  <img src="assets/images/partners/partners-vkkf.jpg" alt="" class="h-full object-contain">
+                <div class="logo">
+                  <img :src="partners.vkkf" loading="lazy" alt="VKKF" class="h-full object-contain">
                 </div>
-                <div class="logo" >
-                  <img src="assets/images/partners/partners-balta-nakts.jpg" alt="" class="h-full object-contain">
+                <div class="logo">
+                  <img :src="partners.baltaNakts" loading="lazy" alt="Baltā nakts" class="h-full object-contain">
                 </div>
-                <div class="logo" >
-                  <img src="assets/images/partners/partners-rembates-sokolade.jpg" alt="" class="h-full object-contain">
+                <div class="logo">
+                  <img :src="partners.rembatesSokola" loading="lazy" alt="Rembates šokolāde" class="h-full object-contain">
                 </div>
-                <div class="logo" >
-                  <img src="assets/images/partners/partners-bilesu-paradize.jpg" alt="" class="h-full object-contain">
+                <div class="logo">
+                  <img :src="partners.bilesuParadize" loading="lazy" alt="Biļešu paradīze" class="h-full object-contain">
                 </div>
-                <div class="logo" >
-                  <img src="assets/images/partners/partners-se.jpg" alt="" class="h-full object-contain">
+                <div class="logo">
+                  <img :src="partners.se" loading="lazy" alt="SE" class="h-full object-contain">
                 </div>
-                <div class="logo" >
-                  <img src="assets/images/partners/partners-eu.png" alt="" class="h-full object-contain">
+                <div class="logo">
+                  <img :src="partners.eu" loading="lazy" alt="EU" class="h-full object-contain">
                 </div>
-                <div class="logo" >
-                  <img src="assets/images/partners/partners-collegium.jpg" alt="" class="h-full object-contain">
+                <div class="logo">
+                  <img :src="partners.collegium" loading="lazy" alt="Collegium Musicum Riga" class="h-full object-contain">
                 </div>
-                <div class="logo" >
-                  <img src="assets/images/partners/partners-rsmc.jpg" alt="" class="h-full object-contain">
+                <div class="logo">
+                  <img :src="partners.rsmc" loading="lazy" alt="RSMC" class="h-full object-contain">
                 </div>
+
 
               </div>
 
