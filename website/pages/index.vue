@@ -2,9 +2,9 @@
 import axios from "axios"
 import {useUtils} from "~/composables/useUtils.js";
 
-
+import {useWpPosts} from "~/stores/useWpPosts.js";
 const utils = useUtils();
-
+const wpPosts = useWpPosts()
 /*
 
 
@@ -121,6 +121,8 @@ onMounted(async () => {
 
   })
 
+  const r = await wpPosts.getPost({slug:"images"})
+  console.log(r)
 })
 </script>
 
@@ -157,11 +159,11 @@ onMounted(async () => {
 
     </main>
 
-    <div class=" background-video fixed z-[-20] top-0 w-screen h-screen overflow-hidden  bg-black">
+    <div class=" background-video fixed z-[-20] top-0 w-screen h-screen overflow-hidden  max-h-[1080px]  bg-black">
       <video autoplay muted loop playsinline preload="none"  class="w-full h-full object-cover " src="assets/videos/remf-3.webm"></video>
     </div>
 
-    <section class="relative  w-screen  h-[100dvh]  ">
+    <section class="relative  w-screen  h-[100dvh] max-h-[1080px]  ">
       <div class="absolute w-full h-full">
         <SectionHero class="absolute" ref="hero"/>
       </div>

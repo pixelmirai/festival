@@ -5,12 +5,26 @@ import ButtonProgramm from "~/components/ButtonProgramm.vue";
 
 const utils = useUtils()
 
+const IMG_URL = "https://rvmdfcontent.wordpress.com/wp-content/uploads/2025/08/"
 
 const heroSlider = ref(null);
 const sliderInterval = ref(null)
 const sliderIntervalCounter = ref(0)
 
 const scrolled = ref(false)
+
+const orchestraImage = ref(`${IMG_URL}hero-maza-gilde-orchestra.webp`)
+
+const images = ref([
+    `${IMG_URL}hero-maza-gilde-orchestra.webp`,
+  `${IMG_URL}hero-maris-kupcs.webp`,
+  `${IMG_URL}hero-elina-simkus.webp`,
+  `${IMG_URL}hero-erik-bosgraf.webp`,
+  `${IMG_URL}hero-monta-martinsone.webp`,
+  `${IMG_URL}hero-anete-viluma.webp`,
+  `${IMG_URL}hero-mauro.webp`,
+  `${IMG_URL}maza-gilde-orchestra.webp`,
+])
 
 defineExpose({
 
@@ -35,39 +49,18 @@ function slideOpen(){
 </script>
 
 <template>
-  <div class="relative w-full h-full overflow-hidden min-h-[475px] xl:min-h-[600px]  ">
+  <div class="relative w-full h-full overflow-hidden min-h-[475px] xl:min-h-[600px]   ">
 
 
     <div class="first-layer absolute flex w-full h-full overflow-hidden slider-fade-out">
 
       <div class="absolute w-full h-full overflow-x-hidden">
         <div class="absolute h-full flex flex-nowrap min-w-max slider-movement ">
-
-          <div  class="slider-image-size">
-            <img src="assets/images/orchestra-church.webp" alt="" class="w-full h-full object-cover">
-          </div>
-          <div  class="slider-image-size">
-            <img src="assets/images/maris-kupcs-2.webp" alt="" class="w-full h-full object-cover">
+          
+          <div v-for="image in images" class="slider-image-size">
+            <img :src="image" alt="" class="w-full h-full object-cover ">
           </div>
 
-          <div  class="slider-image-size">
-            <img src="assets/images/elina-simkus.jpg" alt="" class="w-full h-full object-cover">
-          </div>
-          <div  class="slider-image-size">
-            <img src="assets/images/erik-bosgraf.jpg" alt="" class="w-full h-full object-cover">
-          </div>
-          <div  class="slider-image-size">
-            <img src="assets/images/monta-martinsone.jpg" alt="" class="w-full h-full object-cover">
-          </div>
-          <div  class="slider-image-size">
-            <img src="assets/images/anete-viluma.jpg" alt="" class="w-full h-full object-cover">
-          </div>
-          <div  class="slider-image-size">
-            <img src="assets/images/mauro.jpg" alt="" class="w-full h-full object-cover">
-          </div>
-          <div  class="w-[64rem] h-full ">
-            <img src="assets/images/collegium-2.jpg" alt="" class="w-full h-full object-cover">
-          </div>
 
         </div>
       </div>

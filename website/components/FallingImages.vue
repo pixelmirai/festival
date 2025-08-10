@@ -27,23 +27,26 @@ onMounted(()=>{
     <div class="absolute w-full h-full flex  justify-center items-center">
       <img src="assets/images/keys.png" alt="" class="w-[8rem]">
     </div>
+      <div v-if="imagesInView">
+        <img src="assets/images/description/bosgraf.jpg" alt=""
+             :class="imagesInView ? 'image-1' : 'opacity-0'"
+             class="absolute w-full h-full object-cover ">
+        <img src="assets/images/description/jolanta-barinska.jpg" alt=""
+             :class="imagesInView ? 'image-2' : 'opacity-0'"
+             class="absolute w-full h-full object-cover  ">
+        <img src="assets/images/description/monta-martinsone-2.jpg" alt=""
+             :class="imagesInView ? 'image-3' : 'opacity-0'"
+             class="absolute w-full h-full object-cover i">
+        <img src="assets/images/anete-viluma.jpg" alt=""
+             :class="imagesInView ? 'image-4' : 'opacity-0'"
+             class="absolute w-full h-full object-cover i">
+        <img src="assets/images/description/elina-simkus-2.jpg" alt=""
+             :class="imagesInView ? 'image-5' : 'opacity-0'"
+             class="absolute w-full h-full object-cover i z-20">
+      </div>
+    </div>
 
-    <img src="assets/images/description/bosgraf.jpg" alt=""
-         :class="imagesInView ? 'image-1' : 'opacity-0'"
-         class="absolute w-full h-full object-cover ">
-    <img src="assets/images/description/jolanta-barinska.jpg" alt=""
-         :class="imagesInView ? 'image-2' : 'opacity-0'"
-         class="absolute w-full h-full object-cover  ">
-    <img src="assets/images/description/monta-martinsone-2.jpg" alt=""
-         :class="imagesInView ? 'image-3' : 'opacity-0'"
-         class="absolute w-full h-full object-cover i">
-    <img src="assets/images/anete-viluma.jpg" alt=""
-         :class="imagesInView ? 'image-4' : 'opacity-0'"
-         class="absolute w-full h-full object-cover i">
-    <img src="assets/images/description/elina-simkus-2.jpg" alt=""
-         :class="imagesInView ? 'image-5' : 'opacity-0'"
-         class="absolute w-full h-full object-cover i z-20">
-  </div>
+
 </template>
 
 <style scoped>

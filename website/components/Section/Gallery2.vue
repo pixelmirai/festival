@@ -14,6 +14,8 @@ onMounted(()=>{
 })
 </script>
 
+
+
 <template>
 <div class="relative w-[100vw] h-[48rem]  bg-white overflow-clip    ">
 
