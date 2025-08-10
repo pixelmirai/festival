@@ -160,7 +160,10 @@ onMounted(async () => {
     </main>
 
     <div class=" background-video fixed z-[-20] top-0 w-screen h-screen overflow-hidden  max-h-[1080px]  bg-black">
-      <video autoplay muted loop playsinline preload="none"  class="w-full h-full object-cover " src="assets/videos/remf-3.webm"></video>
+      <div class="absolute flex justify-center items-center w-full h-full">
+        <img src="assets/images/local/main.webp" alt="" class="w-full h-full object-cover">
+      </div>
+      <video autoplay muted loop playsinline preload="none"  class="absolute w-full h-full object-cover " src="assets/videos/remf-3.webm"></video>
     </div>
 
     <section class="relative  w-screen  h-[100dvh] max-h-[1080px]  ">

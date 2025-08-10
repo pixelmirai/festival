@@ -67,10 +67,10 @@ onMounted(()=>{
 }
 @keyframes frame-shadow {
   0%{
-    box-shadow: #52524c 5px 5px 50px 30px ;
+    box-shadow: #52524c 5px 5px 15px 15px ;
   }
   20%{
-    box-shadow: #52524c 20px 25px 15px 20px ;
+    box-shadow: #52524c 10px 15px 10px 10px ;
   }
 
   100%{
