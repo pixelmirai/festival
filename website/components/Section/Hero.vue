@@ -70,7 +70,7 @@ function slideOpen(){
 
     <div class="first-background first-background-slide-up  absolute block  w-full h-full transition-all duration-1000 ease-in-out  ">
       <div class="absolute flex justify-center items-center w-full h-full">
-        <img src="assets/images/maza-gilde-orchestra.webp" alt="" class="w-full h-full object-cover">
+        <img src="assets/images/local/main.webp" alt="" class="w-full h-full object-cover">
       </div>
       <div class="fade-black absolute w-full h-full "></div>
     </div>

@@ -6,6 +6,23 @@ const collegiumZale = "https://maps.app.goo.gl/qxiCgmYymshP3jz67";
 const magdalena = "https://maps.app.goo.gl/sbecYuJLmT3JSpFn6";
 const bolderaja = "https://maps.app.goo.gl/2hNPemBN7wiASMgN6";
 
+
+const IMG_URL = "https://rvmdfcontent.wordpress.com/wp-content/uploads/2025/08/"
+const IMAGES = {
+  'prog-in-exilium': IMG_URL + 'prog-in-exilium.webp',
+  'prog-italijas-valdzinajums': IMG_URL + 'prog-italijas-valdzinajums.webp',
+  'prog-mocarts-sievietes': IMG_URL + 'prog-mocarts-sievietes.webp',
+  'prog-neymann-ensemble': IMG_URL + 'prog-neymann-ensemble.webp',
+  'prog-noslegums': IMG_URL + 'prog-noslegums.webp',
+  'prog-opening-bosgraf-collegium': IMG_URL + 'prog-opening-bosgraf-collegium.webp',
+  'prog-regence-sonore': IMG_URL + 'prog-regence-sonore.webp',
+  'prog-stasti-man': IMG_URL + 'prog-stasti-man.webp',
+  'prog-the-revalers': IMG_URL + 'prog-the-revalers.webp',
+}
+
+
+
+
 const router = useRouter();
 
 const program = [
@@ -82,7 +99,7 @@ const noslegumsOpen = ref(false);
                  :class="atklasanaOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
                 <div class="w-full">
-                  <img src="assets/images/program/opening-bosgraf-collegium.jpg" alt=""
+                  <img :src="IMAGES['prog-opening-bosgraf-collegium']" alt=""
                        class="w-full h-full object-cover" />
                 </div>
               </div>
@@ -144,7 +161,7 @@ const noslegumsOpen = ref(false);
                  :class="regenceSonoreOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
                 <div class="w-full">
-                  <img src="assets/images/regence-sonore.jpg" alt=""
+                  <img :src="IMAGES['prog-regence-sonore']" alt=""
                        class="w-full h-full object-cover" />
                 </div>
               </div>
@@ -217,7 +234,7 @@ const noslegumsOpen = ref(false);
                  :class="inExiliumOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
                 <div class="w-full">
-                  <img src="assets/images/program/in-exilium-1.jpg" alt=""
+                  <img :src="IMAGES['prog-in-exilium']" alt=""
                        class="w-full h-full object-cover" />
                 </div>
               </div>
@@ -299,7 +316,7 @@ const noslegumsOpen = ref(false);
                  :class="neymannOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
                 <div class="w-full">
-                  <img src="assets/images/program/neymann-ensemble.jpg" alt=""
+                  <img :src="IMAGES['prog-neymann-ensemble']" alt=""
                        class="w-full h-full object-cover" />
                 </div>
               </div>
@@ -377,7 +394,7 @@ const noslegumsOpen = ref(false);
                  :class="stastiMilestibaOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
                 <div class="w-full">
-                  <img src="assets/images/program/stasti-man.jpg" alt=""
+                  <img :src="IMAGES['prog-stasti-man']" alt=""
                        class="w-full h-full object-cover" />
                 </div>
               </div>
@@ -456,7 +473,7 @@ const noslegumsOpen = ref(false);
                  :class="mocartsOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
                 <div class="w-full">
-                  <img src="assets/images/program/mocarts-sievietes.jpg" alt=""
+                  <img :src="IMAGES['prog-mocarts-sievietes']" alt=""
                        class="w-full h-full object-cover" />
                 </div>
               </div>
@@ -608,7 +625,7 @@ const noslegumsOpen = ref(false);
                  :class="italijasValdzinajumsOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
                 <div class="w-full">
-                  <img src="assets/images/program/italijas-valdzinajums.jpg" alt=""
+                  <img :src="IMAGES['prog-italijas-valdzinajums']" alt=""
                        class="w-full h-full object-cover" />
                 </div>
               </div>
@@ -682,7 +699,7 @@ const noslegumsOpen = ref(false);
                  :class="revalersOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
                 <div class="w-full">
-                  <img src="assets/images/program/the-revalers.jpg" alt=""
+                  <img :src="IMAGES['prog-the-revalers']" alt=""
                        class="w-full h-full object-cover" />
                 </div>
               </div>
@@ -752,7 +769,7 @@ const noslegumsOpen = ref(false);
                  :class="noslegumsOpen ? '' : 'hidden'">
               <div class="w-full flex justify-center items-center pb-8">
                 <div class="w-full">
-                  <img src="assets/images/program/noslegums.jpg" alt=""
+                  <img :src="IMAGES['prog-noslegums']" alt=""
                        class="w-full h-full object-cover" />
                 </div>
               </div>

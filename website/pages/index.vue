@@ -122,7 +122,7 @@ onMounted(async () => {
   })
 
   const r = await wpPosts.getPost({slug:"images"})
-  console.log(r)
+  console.log(r.attachments)
 })
 </script>
 

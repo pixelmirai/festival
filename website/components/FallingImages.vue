@@ -3,7 +3,21 @@ import {useInView} from "~/composables/useInView.js";
 
 import {useUtils} from "~/composables/useUtils";
 
-const images = ref(null)
+const IMG_URL = "https://rvmdfcontent.wordpress.com/wp-content/uploads/2025/08/"
+
+const images = ref([
+  `${IMG_URL}description-anete-viluma.webp`,
+  `${IMG_URL}hero-maris-kupcs.webp`,
+  `${IMG_URL}hero-elina-simkus.webp`,
+  `${IMG_URL}hero-erik-bosgraf.webp`,
+  `${IMG_URL}hero-monta-martinsone.webp`,
+  `${IMG_URL}hero-anete-viluma.webp`,
+  `${IMG_URL}hero-mauro.webp`,
+  `${IMG_URL}maza-gilde-orchestra.webp`,
+])
+
+
+
 const imagesInView = ref(false)
 onMounted(()=>{
 
@@ -28,19 +42,19 @@ onMounted(()=>{
       <img src="assets/images/keys.png" alt="" class="w-[8rem]">
     </div>
       <div v-if="imagesInView">
-        <img src="assets/images/description/bosgraf.jpg" alt=""
+        <img src="assets/images/description/description-bosgraf.webp" alt=""
              :class="imagesInView ? 'image-1' : 'opacity-0'"
              class="absolute w-full h-full object-cover ">
-        <img src="assets/images/description/jolanta-barinska.jpg" alt=""
+        <img src="assets/images/description/description-jolanta-barinska.webp" alt=""
              :class="imagesInView ? 'image-2' : 'opacity-0'"
              class="absolute w-full h-full object-cover  ">
-        <img src="assets/images/description/monta-martinsone-2.jpg" alt=""
+        <img src="assets/images/description/description-monta-martinsone.webp" alt=""
              :class="imagesInView ? 'image-3' : 'opacity-0'"
              class="absolute w-full h-full object-cover i">
-        <img src="assets/images/anete-viluma.jpg" alt=""
+        <img src="assets/images/description/description-anete-viluma.webp" alt=""
              :class="imagesInView ? 'image-4' : 'opacity-0'"
              class="absolute w-full h-full object-cover i">
-        <img src="assets/images/description/elina-simkus-2.jpg" alt=""
+        <img src="assets/images/description/description-elina-simkus.webp" alt=""
              :class="imagesInView ? 'image-5' : 'opacity-0'"
              class="absolute w-full h-full object-cover i z-20">
       </div>
