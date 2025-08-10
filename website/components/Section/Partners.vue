@@ -35,37 +35,37 @@ onMounted(()=>{
 
               <div v-for="i in 4" class="flex gap-2  py-8 sm:py-0  items-center ">
                 <div class="logo">
-                  <img :src="partners.riga" loading="lazy" alt="Rīgas dome" class="h-full object-contain">
+                  <img src="assets/images/partners/partners-riga.webp" alt="Rīgas dome" class="h-full object-contain">
                 </div>
                 <div class="logo">
-                  <img :src="partners.mazaGilde" loading="lazy" alt="Mazā Ģilde" class="h-full object-contain">
+                  <img src="assets/images/partners/partners-maza-gilde.webp" alt="Mazā Ģilde" class="h-full object-contain">
                 </div>
                 <div class="logo">
-                  <img :src="partners.kulturasMinistrija" loading="lazy" alt="Kultūras ministrija" class="h-full object-contain">
+                  <img src="assets/images/partners/partners-kulturas-ministrija.webp" alt="Kultūras ministrija" class="h-full object-contain">
                 </div>
                 <div class="logo">
-                  <img :src="partners.vkkf" loading="lazy" alt="VKKF" class="h-full object-contain">
+                  <img src="assets/images/partners/partners-vkkf.webp" alt="VKKF" class="h-full object-contain">
                 </div>
                 <div class="logo">
-                  <img :src="partners.baltaNakts" loading="lazy" alt="Baltā nakts" class="h-full object-contain">
+                  <img src="assets/images/partners/partners-balta-nakts.webp" alt="Baltā nakts" class="h-full object-contain">
                 </div>
                 <div class="logo">
-                  <img :src="partners.rembatesSokola" loading="lazy" alt="Rembates šokolāde" class="h-full object-contain">
+                  <img src="assets/images/partners/partners-rembates-sokolade.webp" alt="Rembates šokolāde" class="h-full object-contain">
                 </div>
                 <div class="logo">
-                  <img :src="partners.bilesuParadize" loading="lazy" alt="Biļešu paradīze" class="h-full object-contain">
+                  <img src="assets/images/partners/partners-bilesu-paradize.webp" alt="Biļešu paradīze" class="h-full object-contain">
                 </div>
                 <div class="logo">
-                  <img :src="partners.se" loading="lazy" alt="SE" class="h-full object-contain">
+                  <img src="assets/images/partners/partners-se.webp" alt="SE" class="h-full object-contain">
                 </div>
                 <div class="logo">
-                  <img :src="partners.eu" loading="lazy" alt="EU" class="h-full object-contain">
+                  <img src="assets/images/partners/partners-eu.webp" alt="EU" class="h-full object-contain">
                 </div>
                 <div class="logo">
-                  <img :src="partners.collegium" loading="lazy" alt="Collegium Musicum Riga" class="h-full object-contain">
+                  <img src="assets/images/partners/partners-collegium.webp" alt="Collegium Musicum Riga" class="h-full object-contain">
                 </div>
                 <div class="logo">
-                  <img :src="partners.rsmc" loading="lazy" alt="RSMC" class="h-full object-contain">
+                  <img src="assets/images/partners/partners-rsmc.webp" alt="RSMC" class="h-full object-contain">
                 </div>
 
 
