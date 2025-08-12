@@ -56,6 +56,13 @@ const noslegumsOpen = ref(false);
       <div class="programm-list mx-auto max-w-screen-2xl">
 
 
+
+
+
+
+
+
+
         <div class="program-item mx-4">
           <div>
             <p class="font-bold text-2xl text-gray-600 uppercase">
@@ -109,9 +116,15 @@ const noslegumsOpen = ref(false);
             </div>
 
             <div class="buttons flex">
-              <p class="flex justify-start items-end w-1/2">
-                Ieeja ar bezmaksas ielūgumiem
-              </p>
+              <div class="flex justify-start items-end w-1/2">
+                <a href="https://www.bilesuparadize.lv/lv/event/154858" target="_blank" rel="noopener noreferrer">
+                  <button
+                      class="bg-[#5B8930] border-2 border-[#5B8930] text-white w-[6rem] hover:bg-white hover:text-[#5B8930] cursor-pointer"
+                      style="aspect-ratio: 1.6">
+                    Bezmaksas IELŪGUMS
+                  </button>
+                </a>
+              </div>
               <div class="flex justify-end items-center w-1/2">
                 <button
                     @click="atklasanaOpen = !atklasanaOpen"
@@ -124,7 +137,26 @@ const noslegumsOpen = ref(false);
           </div>
         </div>
 
+
+
+
+
+
+
+
+
+
+
         <div class="w-full my-16 border-t border-black mx-4"></div>
+
+
+
+
+
+
+
+
+
 
         <div class="program-item mx-4">
           <div>
@@ -197,7 +229,30 @@ const noslegumsOpen = ref(false);
           </div>
         </div>
 
+
+
+
+
+
+
+
+
         <div class="w-full my-16 border-t border-black mx-4"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <div class="program-item mx-4">
           <div>
@@ -276,7 +331,25 @@ const noslegumsOpen = ref(false);
           </div>
         </div>
 
+
+
+
+
+
+
+
+
         <div class="w-full my-16 border-t border-black mx-4"></div>
+
+
+
+
+
+
+
+
+
+
 
         <div class="program-item mx-4">
           <div>
@@ -332,7 +405,7 @@ const noslegumsOpen = ref(false);
 
             <div class="flex">
               <div class="flex justify-start items-end w-1/2">
-                <a href="https://www.bilesuparadize.lv/lv/event/154881" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.bilesuparadize.lv/lv/event/154880" target="_blank" rel="noopener noreferrer">
                   <button
                       class="bg-[#5B8930] border-2 border-[#5B8930] text-white w-[6rem] hover:bg-white hover:text-[#5B8930] cursor-pointer"
                       style="aspect-ratio: 1.6">
@@ -352,7 +425,26 @@ const noslegumsOpen = ref(false);
           </div>
         </div>
 
+
+
+
+
+
+
+
+
+
         <div class="w-full my-16 border-t border-black mx-4"></div>
+
+
+
+
+
+
+
+
+
+
 
         <div class="program-item mx-4">
           <div>
@@ -410,7 +502,7 @@ const noslegumsOpen = ref(false);
 
             <div class="flex">
               <div class="flex justify-start items-end w-1/2">
-                <a href="https://www.bilesuparadize.lv/lv/event/154883" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.bilesuparadize.lv/lv/event/154881" target="_blank" rel="noopener noreferrer">
                   <button
                       class="bg-[#5B8930] border-2 border-[#5B8930] text-white w-[6rem] hover:bg-white hover:text-[#5B8930] cursor-pointer"
                       style="aspect-ratio: 1.6">
@@ -430,7 +522,24 @@ const noslegumsOpen = ref(false);
           </div>
         </div>
 
+
+
+
+
+
+
+
+
+
         <div class="w-full my-16 border-t border-black mx-4"></div>
+
+
+
+
+
+
+
+
 
 
         <div class="program-item mx-4">
@@ -535,7 +644,7 @@ const noslegumsOpen = ref(false);
             <div class="flex justify-center py-4">
               <a :href="bolderaja" target="_blank" rel="noopener noreferrer">
                 <p class="hover:underline text-xl font-semibold">
-                  <span class="italic pr-2">Bolderājas ev.lug. baznīca</span>
+                  <span class="italic pr-2">Bolderājas ev.lut. baznīca</span>
                 </p>
                 <p class="text-center py-2">
                   <span class="pr-2">Lielā iela 45, Rīga</span>
@@ -565,7 +674,7 @@ const noslegumsOpen = ref(false);
 
             <div class="flex">
               <div class="flex justify-start items-end w-1/2">
-                <a href="https://www.bilesuparadize.lv/lv/event/154882" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.bilesuparadize.lv/lv/event/154883" target="_blank" rel="noopener noreferrer">
                   <button
                       class="bg-[#5B8930] border-2 border-[#5B8930] text-white w-[6rem] hover:bg-white hover:text-[#5B8930] cursor-pointer"
                       style="aspect-ratio: 1.6">
@@ -585,7 +694,25 @@ const noslegumsOpen = ref(false);
           </div>
         </div>
 
+
+
+
+
+
+
+
+
         <div class="w-full my-16 border-t border-black mx-4"></div>
+
+
+
+
+
+
+
+
+
+
 
 
         <div class="program-item mx-4">
@@ -596,7 +723,7 @@ const noslegumsOpen = ref(false);
           </div>
 
           <div class="flex flex-col py-4 gap-2 border-b border-gray-200">
-            <h2 class="text-3xl font-serif">Itālijas Valdzinājums</h2>
+            <h2 class="text-3xl font-serif">Itālijas valdzinājums</h2>
           </div>
 
           <div class="pt-4">
@@ -741,9 +868,9 @@ const noslegumsOpen = ref(false);
           </div>
 
           <div class="flex flex-col py-4 gap-2 border-b border-gray-200">
-            <h2 class="text-3xl font-serif">Festivāla noslēguma koncerts</h2>
+            <h2 class="text-3xl font-serif">Festivāla noslēguma koncerts: <span class="italic"> Tales between the notes</span></h2>
             <h3 class="text-xl font-bold">
-              Ansamblis <span class="italic">Coloquio 6</span> (Hāga, NL) (S-Eeemerging)
+              Ansamblis <span class="italic">Coloquio 6</span>
             </h3>
           </div>
 
